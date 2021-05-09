@@ -1,11 +1,9 @@
 import rclpy
-from rclpy import Node
 import numpy as np
 import cv2
 from spark_msgs.msg import LaneCoeffs, WaypointData
 
-class LeftWaypointExtractNode(Node):
-
+class LeftWaypointExtractNode(rclpy.Node):
     def __init__(self):
         super().__init__("LeftWaypointExtract")
 
@@ -21,11 +19,24 @@ class LeftWaypointExtractNode(Node):
             1
         )
 
-
     def callback(self, msg):
         slope = msg.slope
         bias = msg.bias
 
+        t_slope, t_bias = self.transform(slope, bias)
+
+        line = np.poly1d([t_slope, t_bias])
+        x_space = np.linspace(0, 1080, 1080, dtype="int32")
+        y_space = line(x_space)
+
+        data = WaypointData()
+        data.x = x_space
+        data.y = y_space
+
+        self.publisher.publish(data)
+
+    def transform(self, slope, bias):
+        return 1/slope, bias
 
 
 def main(args=None):

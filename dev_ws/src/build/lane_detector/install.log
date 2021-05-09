@@ -1,4 +1,5 @@
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LeftWaypointExtractNode.py
+/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ShowLeftWaypoints.py
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/BinaryToFit.py
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/k_means_pytorch.py
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LeftLaneDetectorNode.py
@@ -13,6 +14,7 @@
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/evaluation.py
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/process_training_dataset_2.py
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/LeftWaypointExtractNode.cpython-36.pyc
+/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/ShowLeftWaypoints.cpython-36.pyc
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/BinaryToFit.cpython-36.pyc
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/k_means_pytorch.cpython-36.pyc
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/LeftLaneDetectorNode.cpython-36.pyc

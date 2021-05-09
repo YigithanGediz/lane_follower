@@ -1,10 +1,9 @@
 import rclpy
-from rclpy import Node
 import numpy as np
 import cv2
 from spark_msgs.msg import LaneCoeffs, WaypointData
 
-class LeftWaypointExtractNode(Node):
+class LeftWaypointExtractNode(rclpy.Node):
     def __init__(self):
         super().__init__("LeftWaypointExtract")
 
