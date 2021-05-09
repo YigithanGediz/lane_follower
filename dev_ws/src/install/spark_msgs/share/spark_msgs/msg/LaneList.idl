@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from spark_msgs/msg/LaneList.msg
+// generated code does not contain a copyright notice
+
+#include "spark_msgs/msg/Lane.idl"
+#include "std_msgs/msg/Header.idl"
+
+module spark_msgs {
+  module msg {
+    struct LaneList {
+      std_msgs::msg::Header header;
+
+      sequence<spark_msgs::msg::Lane> x_coords;
+
+      sequence<spark_msgs::msg::Lane> y_coords;
+    };
+  };
+};

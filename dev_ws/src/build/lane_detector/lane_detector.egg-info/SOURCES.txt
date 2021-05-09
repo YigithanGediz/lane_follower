@@ -9,8 +9,10 @@ setup.py
 ../build/lane_detector/lane_detector.egg-info/top_level.txt
 ../build/lane_detector/lane_detector.egg-info/zip-safe
 lane_detector/BinaryToFit.py
-lane_detector/LaneDetectorNode.py
+lane_detector/LeftLaneDetectorNode.py
+lane_detector/LeftWaypointExtractNode.py
 lane_detector/ProcessLaneNode.py
+lane_detector/RightLaneDetectorNode.py
 lane_detector/__init__.py
 lane_detector/cluster_loss3.py
 lane_detector/evaluation.py
@@ -20,6 +22,7 @@ lane_detector/lane.py
 lane_detector/make_predictions.py
 lane_detector/model2.py
 lane_detector/process_training_dataset_2.py
+launch/lane_detector.launch.py
 resource/lane_detector
 test/test_copyright.py
 test/test_flake8.py

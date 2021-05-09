@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from spark_msgs/msg/Lane.msg
+// generated code does not contain a copyright notice
+
+
+module spark_msgs {
+  module msg {
+    struct Lane {
+      sequence<int16> lane;
+    };
+  };
+};

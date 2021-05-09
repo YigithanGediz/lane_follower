@@ -37,6 +37,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/LaneWaypoints.msg"
   "msg/WaypointsList.msg"
   "msg/LaneCoeffs.msg"
+  "msg/WaypointData.msg"
   DEPENDENCIES std_msgs
  )
 
