@@ -1,0 +1,68 @@
+[0.249s] Invoking command in '/home/yigithan/lane_follower/dev_ws/src/lane_detector': PYTHONPATH=/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lane_detector build --build-base /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build install --prefix /home/yigithan/lane_follower/dev_ws/src/install/lane_detector --record /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log --single-version-externally-managed
+[0.471s] running egg_info
+[0.472s] creating ../build/lane_detector/lane_detector.egg-info
+[0.472s] writing ../build/lane_detector/lane_detector.egg-info/PKG-INFO
+[0.472s] writing dependency_links to ../build/lane_detector/lane_detector.egg-info/dependency_links.txt
+[0.472s] writing entry points to ../build/lane_detector/lane_detector.egg-info/entry_points.txt
+[0.472s] writing requirements to ../build/lane_detector/lane_detector.egg-info/requires.txt
+[0.472s] writing top-level names to ../build/lane_detector/lane_detector.egg-info/top_level.txt
+[0.473s] writing manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'
+[0.497s] reading manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'
+[0.498s] writing manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'
+[0.498s] running build
+[0.498s] running build_py
+[0.498s] creating /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build
+[0.498s] creating /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib
+[0.498s] creating /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/BinaryToFit.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/k_means_pytorch.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/__init__.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/LaneDetectorNode.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/cluster_loss3.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.498s] copying lane_detector/find_waypoints.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/make_predictions.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/lane.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/ProcessLaneNode.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/model2.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/evaluation.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] copying lane_detector/process_training_dataset_2.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.499s] running install
+[0.499s] running install_lib
+[0.499s] creating /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.499s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/BinaryToFit.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/k_means_pytorch.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/__init__.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/LaneDetectorNode.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/cluster_loss3.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/find_waypoints.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/make_predictions.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/lane.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/ProcessLaneNode.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/model2.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/evaluation.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/process_training_dataset_2.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.500s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/BinaryToFit.py to BinaryToFit.cpython-36.pyc
+[0.501s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/k_means_pytorch.py to k_means_pytorch.cpython-36.pyc
+[0.501s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__init__.py to __init__.cpython-36.pyc
+[0.502s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LaneDetectorNode.py to LaneDetectorNode.cpython-36.pyc
+[0.502s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/cluster_loss3.py to cluster_loss3.cpython-36.pyc
+[0.503s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/find_waypoints.py to find_waypoints.cpython-36.pyc
+[0.504s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/make_predictions.py to make_predictions.cpython-36.pyc
+[0.505s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/lane.py to lane.cpython-36.pyc
+[0.506s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ProcessLaneNode.py to ProcessLaneNode.cpython-36.pyc
+[0.506s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/model2.py to model2.cpython-36.pyc
+[0.508s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/evaluation.py to evaluation.cpython-36.pyc
+[0.508s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/process_training_dataset_2.py to process_training_dataset_2.cpython-36.pyc
+[0.509s] running install_data
+[0.509s] creating /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/share/ament_index
+[0.509s] creating /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/share/ament_index/resource_index
+[0.510s] creating /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/share/ament_index/resource_index/packages
+[0.510s] copying resource/lane_detector -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/share/ament_index/resource_index/packages
+[0.510s] copying package.xml -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/share/lane_detector
+[0.510s] running install_egg_info
+[0.511s] Copying ../build/lane_detector/lane_detector.egg-info to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info
+[0.511s] running install_scripts
+[0.525s] Installing lane_detection script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.525s] Installing process_lanes script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.525s] writing list of installed files to '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log'
+[0.541s] Invoked command in '/home/yigithan/lane_follower/dev_ws/src/lane_detector' returned '0': PYTHONPATH=/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lane_detector build --build-base /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build install --prefix /home/yigithan/lane_follower/dev_ws/src/install/lane_detector --record /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log --single-version-externally-managed
