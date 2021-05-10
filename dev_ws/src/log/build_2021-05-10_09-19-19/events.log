@@ -1,0 +1,628 @@
+[0.000000] (-) TimerEvent: {}
+[0.000190] (lane_detector) JobQueued: {'identifier': 'lane_detector', 'dependencies': OrderedDict()}
+[0.000242] (spark_msgs) JobQueued: {'identifier': 'spark_msgs', 'dependencies': OrderedDict()}
+[0.000497] (lane_detector) JobStarted: {'identifier': 'lane_detector'}
+[0.009258] (spark_msgs) JobStarted: {'identifier': 'spark_msgs'}
+[0.099905] (-) TimerEvent: {}
+[0.200186] (-) TimerEvent: {}
+[0.253825] (spark_msgs) JobProgress: {'identifier': 'spark_msgs', 'progress': 'cmake'}
+[0.254338] (spark_msgs) JobProgress: {'identifier': 'spark_msgs', 'progress': 'build'}
+[0.254903] (spark_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs', '--', '-j12', '-l12'], 'cwd': '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yigithan'), ('LC_TIME', 'tr_TR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2668'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/local/cuda/lib64'), ('SHLVL', '1'), ('OLDPWD', '/home/yigithan/lane_follower'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/yigithan'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'yigithan'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '1079c5211b71463399162062123512680200000025710007'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'yigithan'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda/bin:/home/yigithan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yigithan-Lenovo-Legion-7-15IMH05:@/tmp/.ICE-unix/2571,unix/yigithan-Lenovo-Legion-7-15IMH05:/tmp/.ICE-unix/2571'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d9b5defc_62a4_4a82_bbeb_79dad42d0093'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.72'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'tr_TR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('PYTHONPATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector:/opt/ros/dashing')]), 'shell': False}
+[0.259494] (lane_detector) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/lane_detector', 'build', '--build-base', '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build', 'install', '--prefix', '/home/yigithan/lane_follower/dev_ws/src/install/lane_detector', '--record', '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log', '--single-version-externally-managed'], 'cwd': '/home/yigithan/lane_follower/dev_ws/src/lane_detector', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yigithan', 'LC_TIME': 'tr_TR.UTF-8', 'TEXTDOMAIN': 'im-config', 'XDG_SEAT': 'seat0', 'SSH_AGENT_PID': '2668', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/local/cuda/lib64', 'SHLVL': '1', 'OLDPWD': '/home/yigithan/lane_follower', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/yigithan', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'tr_TR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'MANDATORY_PATH': '/usr/share/gconf/ubuntu.mandatory.path', 'COLCON_PREFIX_PATH': '/home/yigithan/lane_follower/dev_ws/src/install', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'dashing', 'LOGNAME': 'yigithan', 'GTK_IM_MODULE': 'ibus', 'DESKTOP_AUTOSTART_ID': '1079c5211b71463399162062123512680200000025710007', '_': '/usr/bin/colcon', 'DEFAULTS_PATH': '/usr/share/gconf/ubuntu.default.path', 'ROS_VERSION': '2', 'USERNAME': 'yigithan', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/dashing/bin:/usr/local/cuda/bin:/home/yigithan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/yigithan-Lenovo-Legion-7-15IMH05:@/tmp/.ICE-unix/2571,unix/yigithan-Lenovo-Legion-7-15IMH05:/tmp/.ICE-unix/2571', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/d9b5defc_62a4_4a82_bbeb_79dad42d0093', 'LC_ADDRESS': 'tr_TR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'tr_TR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'GNOME_TERMINAL_SERVICE': ':1.72', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector:/opt/ros/dashing', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'LC_NAME': 'tr_TR.UTF-8', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'tr_TR.UTF-8', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'tr_TR.UTF-8', 'XDG_VTNR': '2', 'QT_IM_MODULE': 'ibus', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'LC_NUMERIC': 'tr_TR.UTF-8', 'PYTHONPATH': '/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages', 'LC_PAPER': 'tr_TR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '5202', 'CMAKE_PREFIX_PATH': '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs'}, 'shell': False}
+[0.279613] (spark_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[0.299697] (spark_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[0.299879] (spark_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.300243] (-) TimerEvent: {}
+[0.400506] (-) TimerEvent: {}
+[0.488716] (spark_msgs) StdoutLine: {'line': b'-- Found std_msgs: 0.7.0 (/opt/ros/dashing/share/std_msgs/cmake)\n'}
+[0.489643] (lane_detector) StdoutLine: {'line': b'running egg_info\n'}
+[0.490100] (lane_detector) StdoutLine: {'line': b'writing ../build/lane_detector/lane_detector.egg-info/PKG-INFO\n'}
+[0.490279] (lane_detector) StdoutLine: {'line': b'writing dependency_links to ../build/lane_detector/lane_detector.egg-info/dependency_links.txt\n'}
+[0.490531] (lane_detector) StdoutLine: {'line': b'writing entry points to ../build/lane_detector/lane_detector.egg-info/entry_points.txt\n'}
+[0.490779] (lane_detector) StdoutLine: {'line': b'writing requirements to ../build/lane_detector/lane_detector.egg-info/requires.txt\n'}
+[0.490911] (lane_detector) StdoutLine: {'line': b'writing top-level names to ../build/lane_detector/lane_detector.egg-info/top_level.txt\n'}
+[0.495461] (spark_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[0.500573] (-) TimerEvent: {}
+[0.515546] (lane_detector) StdoutLine: {'line': b"reading manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'\n"}
+[0.516627] (lane_detector) StdoutLine: {'line': b"writing manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'\n"}
+[0.516866] (lane_detector) StdoutLine: {'line': b'running build\n'}
+[0.517109] (lane_detector) StdoutLine: {'line': b'running build_py\n'}
+[0.517226] (lane_detector) StdoutLine: {'line': b'copying lane_detector/ShowLeftWaypoints.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector\n'}
+[0.517502] (lane_detector) StdoutLine: {'line': b'copying lane_detector/LeftWaypointsNode.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector\n'}
+[0.517838] (lane_detector) StdoutLine: {'line': b'running install\n'}
+[0.518103] (lane_detector) StdoutLine: {'line': b'running install_lib\n'}
+[0.518402] (spark_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[0.518598] (lane_detector) StdoutLine: {'line': b'copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/ShowLeftWaypoints.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector\n'}
+[0.518901] (lane_detector) StdoutLine: {'line': b'copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/LeftWaypointsNode.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector\n'}
+[0.519264] (lane_detector) StdoutLine: {'line': b'byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ShowLeftWaypoints.py to ShowLeftWaypoints.cpython-36.pyc\n'}
+[0.519890] (lane_detector) StdoutLine: {'line': b'byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LeftWaypointsNode.py to LeftWaypointsNode.cpython-36.pyc\n'}
+[0.520354] (lane_detector) StdoutLine: {'line': b'running install_data\n'}
+[0.520771] (lane_detector) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.521907] (lane_detector) StdoutLine: {'line': b"removing '/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info' (and everything under it)\n"}
+[0.522097] (lane_detector) StdoutLine: {'line': b'Copying ../build/lane_detector/lane_detector.egg-info to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info\n'}
+[0.522641] (lane_detector) StdoutLine: {'line': b'running install_scripts\n'}
+[0.536523] (lane_detector) StdoutLine: {'line': b'Installing left_lane_detection script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector\n'}
+[0.537026] (lane_detector) StdoutLine: {'line': b'Installing left_waypoints script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector\n'}
+[0.537156] (lane_detector) StdoutLine: {'line': b'Installing process_lanes script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector\n'}
+[0.537218] (lane_detector) StdoutLine: {'line': b'Installing right_lane_detection script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector\n'}
+[0.537424] (lane_detector) StdoutLine: {'line': b"writing list of installed files to '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log'\n"}
+[0.553612] (lane_detector) CommandEnded: {'returncode': 0}
+[0.563459] (lane_detector) JobEnded: {'identifier': 'lane_detector', 'rc': 0}
+[0.600692] (-) TimerEvent: {}
+[0.607709] (spark_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[0.700773] (-) TimerEvent: {}
+[0.801012] (-) TimerEvent: {}
+[0.813536] (spark_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[0.831217] (spark_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[0.901136] (-) TimerEvent: {}
+[0.948787] (spark_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[0.968783] (spark_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[0.968994] (spark_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.11 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[0.989237] (spark_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.989366] (spark_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[0.989426] (spark_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so\n'}
+[1.001253] (-) TimerEvent: {}
+[1.062327] (spark_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[1.070068] (spark_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.070733] (spark_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.072691] (spark_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.101376] (-) TimerEvent: {}
+[1.152571] (spark_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.154886] (spark_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs\n'}
+[1.173733] (spark_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.181686] (spark_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.201477] (-) TimerEvent: {}
+[1.301740] (-) TimerEvent: {}
+[1.402057] (-) TimerEvent: {}
+[1.502319] (-) TimerEvent: {}
+[1.602554] (-) TimerEvent: {}
+[1.702819] (-) TimerEvent: {}
+[1.778258] (spark_msgs) StdoutLine: {'line': b'[  1%] Built target spark_msgs__cpp\n'}
+[1.787749] (spark_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.787885] (spark_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.802896] (-) TimerEvent: {}
+[1.903110] (-) TimerEvent: {}
+[1.969625] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.983378] (spark_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/goal_state__functions.c.o\x1b[0m\n'}
+[1.985193] (spark_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/open_loop_speed__functions.c.o\x1b[0m\n'}
+[1.985732] (spark_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoints__functions.c.o\x1b[0m\n'}
+[1.985872] (spark_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/behaviour_state__functions.c.o\x1b[0m\n'}
+[1.986033] (spark_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_list__functions.c.o\x1b[0m\n'}
+[1.986167] (spark_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane__functions.c.o\x1b[0m\n'}
+[1.986646] (spark_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/pose__functions.c.o\x1b[0m\n'}
+[1.986777] (spark_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint__functions.c.o\x1b[0m\n'}
+[1.986882] (spark_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/multi_float64__functions.c.o\x1b[0m\n'}
+[1.992434] (spark_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_fit_quadratic__functions.c.o\x1b[0m\n'}
+[2.003200] (-) TimerEvent: {}
+[2.021605] (spark_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_waypoints__functions.c.o\x1b[0m\n'}
+[2.023936] (spark_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o\x1b[0m\n'}
+[2.024227] (spark_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoints_list__functions.c.o\x1b[0m\n'}
+[2.025470] (spark_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o\x1b[0m\n'}
+[2.062644] (spark_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libspark_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.091786] (spark_msgs) StdoutLine: {'line': b'[ 14%] Built target spark_msgs__rosidl_generator_c\n'}
+[2.101289] (spark_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.103282] (-) TimerEvent: {}
+[2.203512] (-) TimerEvent: {}
+[2.303773] (-) TimerEvent: {}
+[2.371220] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.388131] (spark_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/waypoints__type_support.cpp.o\x1b[0m\n'}
+[2.388383] (spark_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/open_loop_speed__type_support.cpp.o\x1b[0m\n'}
+[2.388822] (spark_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/pose__type_support.cpp.o\x1b[0m\n'}
+[2.389006] (spark_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/behaviour_state__type_support.cpp.o\x1b[0m\n'}
+[2.389138] (spark_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/goal_state__type_support.cpp.o\x1b[0m\n'}
+[2.389657] (spark_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/multi_float64__type_support.cpp.o\x1b[0m\n'}
+[2.389821] (spark_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[2.390014] (spark_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/lane_list__type_support.cpp.o\x1b[0m\n'}
+[2.390120] (spark_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/lane__type_support.cpp.o\x1b[0m\n'}
+[2.393470] (spark_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/lane_fit_quadratic__type_support.cpp.o\x1b[0m\n'}
+[2.403864] (-) TimerEvent: {}
+[2.504248] (-) TimerEvent: {}
+[2.604546] (-) TimerEvent: {}
+[2.655695] (spark_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/lane_waypoints__type_support.cpp.o\x1b[0m\n'}
+[2.656432] (spark_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/waypoints_list__type_support.cpp.o\x1b[0m\n'}
+[2.687829] (spark_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/waypoint_data__type_support.cpp.o\x1b[0m\n'}
+[2.688562] (spark_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/spark_msgs/msg/lane_coeffs__type_support.cpp.o\x1b[0m\n'}
+[2.704639] (-) TimerEvent: {}
+[2.739120] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.763466] (spark_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/open_loop_speed__type_support.cpp.o\x1b[0m\n'}
+[2.763708] (spark_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/pose__type_support.cpp.o\x1b[0m\n'}
+[2.763844] (spark_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/waypoint__type_support.cpp.o\x1b[0m\n'}
+[2.764044] (spark_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/waypoints__type_support.cpp.o\x1b[0m\n'}
+[2.771144] (spark_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/goal_state__type_support.cpp.o\x1b[0m\n'}
+[2.771870] (spark_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/behaviour_state__type_support.cpp.o\x1b[0m\n'}
+[2.804732] (-) TimerEvent: {}
+[2.806550] (spark_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/lane_list__type_support.cpp.o\x1b[0m\n'}
+[2.904837] (-) TimerEvent: {}
+[2.957390] (spark_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/lane__type_support.cpp.o\x1b[0m\n'}
+[2.965590] (spark_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/multi_float64__type_support.cpp.o\x1b[0m\n'}
+[3.004941] (-) TimerEvent: {}
+[3.009539] (spark_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/lane_fit_quadratic__type_support.cpp.o\x1b[0m\n'}
+[3.020424] (spark_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX shared library libspark_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.099142] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[3.105041] (-) TimerEvent: {}
+[3.123950] (spark_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/open_loop_speed__type_support.c.o\x1b[0m\n'}
+[3.173384] (spark_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/pose__type_support.c.o\x1b[0m\n'}
+[3.174856] (spark_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/waypoint__type_support.c.o\x1b[0m\n'}
+[3.181271] (spark_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/waypoints__type_support.c.o\x1b[0m\n'}
+[3.184843] (spark_msgs) StdoutLine: {'line': b'[ 38%] Built target spark_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.196712] (spark_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/goal_state__type_support.c.o\x1b[0m\n'}
+[3.205146] (-) TimerEvent: {}
+[3.210429] (spark_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/lane_list__type_support.c.o\x1b[0m\n'}
+[3.214849] (spark_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/lane_waypoints__type_support.cpp.o\x1b[0m\n'}
+[3.215208] (spark_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/behaviour_state__type_support.c.o\x1b[0m\n'}
+[3.216329] (spark_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/lane__type_support.c.o\x1b[0m\n'}
+[3.232748] (spark_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/waypoints_list__type_support.cpp.o\x1b[0m\n'}
+[3.235966] (spark_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/multi_float64__type_support.c.o\x1b[0m\n'}
+[3.243852] (spark_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/lane_fit_quadratic__type_support.c.o\x1b[0m\n'}
+[3.246879] (spark_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/lane_coeffs__type_support.cpp.o\x1b[0m\n'}
+[3.251121] (spark_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/lane_waypoints__type_support.c.o\x1b[0m\n'}
+[3.255998] (spark_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/spark_msgs/msg/dds_fastrtps/waypoint_data__type_support.cpp.o\x1b[0m\n'}
+[3.266654] (spark_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/waypoints_list__type_support.c.o\x1b[0m\n'}
+[3.297237] (spark_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/waypoint_data__type_support.c.o\x1b[0m\n'}
+[3.301669] (spark_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/spark_msgs/msg/lane_coeffs__type_support.c.o\x1b[0m\n'}
+[3.305250] (-) TimerEvent: {}
+[3.332421] (spark_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking C shared library libspark_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.373198] (spark_msgs) StdoutLine: {'line': b'[ 49%] Built target spark_msgs__rosidl_typesupport_introspection_c\n'}
+[3.405350] (-) TimerEvent: {}
+[3.505644] (-) TimerEvent: {}
+[3.605912] (-) TimerEvent: {}
+[3.607503] (spark_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32m\x1b[1mLinking CXX shared library libspark_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.676855] (spark_msgs) StdoutLine: {'line': b'[ 49%] Built target spark_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.686325] (spark_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.686467] (spark_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.706025] (-) TimerEvent: {}
+[3.806223] (-) TimerEvent: {}
+[3.906451] (-) TimerEvent: {}
+[4.006654] (-) TimerEvent: {}
+[4.087295] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.105377] (spark_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/open_loop_speed__type_support.cpp.o\x1b[0m\n'}
+[4.105581] (spark_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/goal_state__type_support.cpp.o\x1b[0m\n'}
+[4.105681] (spark_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[4.105820] (spark_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/behaviour_state__type_support.cpp.o\x1b[0m\n'}
+[4.105911] (spark_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/waypoints__type_support.cpp.o\x1b[0m\n'}
+[4.105995] (spark_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/lane_list__type_support.cpp.o\x1b[0m\n'}
+[4.106120] (spark_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/lane__type_support.cpp.o\x1b[0m\n'}
+[4.106207] (spark_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/multi_float64__type_support.cpp.o\x1b[0m\n'}
+[4.106269] (spark_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/pose__type_support.cpp.o\x1b[0m\n'}
+[4.106382] (spark_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/lane_waypoints__type_support.cpp.o\x1b[0m\n'}
+[4.106723] (-) TimerEvent: {}
+[4.107068] (spark_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/lane_fit_quadratic__type_support.cpp.o\x1b[0m\n'}
+[4.206830] (-) TimerEvent: {}
+[4.307123] (-) TimerEvent: {}
+[4.407434] (-) TimerEvent: {}
+[4.507759] (-) TimerEvent: {}
+[4.509554] (spark_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/waypoints_list__type_support.cpp.o\x1b[0m\n'}
+[4.510839] (spark_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/lane_coeffs__type_support.cpp.o\x1b[0m\n'}
+[4.517165] (spark_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/spark_msgs/msg/waypoint_data__type_support.cpp.o\x1b[0m\n'}
+[4.559536] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.581985] (spark_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/open_loop_speed__type_support_c.cpp.o\x1b[0m\n'}
+[4.582607] (spark_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/goal_state__type_support_c.cpp.o\x1b[0m\n'}
+[4.582777] (spark_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/lane_list__type_support_c.cpp.o\x1b[0m\n'}
+[4.582942] (spark_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/waypoint__type_support_c.cpp.o\x1b[0m\n'}
+[4.583116] (spark_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/pose__type_support_c.cpp.o\x1b[0m\n'}
+[4.583245] (spark_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/behaviour_state__type_support_c.cpp.o\x1b[0m\n'}
+[4.583339] (spark_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/waypoints__type_support_c.cpp.o\x1b[0m\n'}
+[4.583462] (spark_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/lane__type_support_c.cpp.o\x1b[0m\n'}
+[4.591911] (spark_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/multi_float64__type_support_c.cpp.o\x1b[0m\n'}
+[4.607856] (-) TimerEvent: {}
+[4.708150] (-) TimerEvent: {}
+[4.808470] (-) TimerEvent: {}
+[4.896749] (spark_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/lane_fit_quadratic__type_support_c.cpp.o\x1b[0m\n'}
+[4.908577] (-) TimerEvent: {}
+[4.922197] (spark_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/lane_waypoints__type_support_c.cpp.o\x1b[0m\n'}
+[4.930752] (spark_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libspark_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.934576] (spark_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/waypoints_list__type_support_c.cpp.o\x1b[0m\n'}
+[4.946384] (spark_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/lane_coeffs__type_support_c.cpp.o\x1b[0m\n'}
+[4.947841] (spark_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/spark_msgs/msg/waypoint_data__type_support_c.cpp.o\x1b[0m\n'}
+[5.008658] (-) TimerEvent: {}
+[5.018717] (spark_msgs) StdoutLine: {'line': b'[ 72%] Built target spark_msgs__rosidl_typesupport_cpp\n'}
+[5.108747] (-) TimerEvent: {}
+[5.195729] (spark_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libspark_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.208836] (-) TimerEvent: {}
+[5.260871] (spark_msgs) StdoutLine: {'line': b'[ 73%] Built target spark_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.269649] (spark_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.308924] (-) TimerEvent: {}
+[5.409257] (-) TimerEvent: {}
+[5.509554] (-) TimerEvent: {}
+[5.609800] (-) TimerEvent: {}
+[5.657195] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[5.673432] (spark_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/open_loop_speed__type_support.cpp.o\x1b[0m\n'}
+[5.673657] (spark_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/pose__type_support.cpp.o\x1b[0m\n'}
+[5.673900] (spark_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/waypoint__type_support.cpp.o\x1b[0m\n'}
+[5.674020] (spark_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/behaviour_state__type_support.cpp.o\x1b[0m\n'}
+[5.674126] (spark_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/goal_state__type_support.cpp.o\x1b[0m\n'}
+[5.674377] (spark_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/lane_list__type_support.cpp.o\x1b[0m\n'}
+[5.674525] (spark_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/waypoints__type_support.cpp.o\x1b[0m\n'}
+[5.674621] (spark_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/lane_fit_quadratic__type_support.cpp.o\x1b[0m\n'}
+[5.674723] (spark_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/lane__type_support.cpp.o\x1b[0m\n'}
+[5.674896] (spark_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/multi_float64__type_support.cpp.o\x1b[0m\n'}
+[5.675011] (spark_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/lane_waypoints__type_support.cpp.o\x1b[0m\n'}
+[5.675544] (spark_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/waypoints_list__type_support.cpp.o\x1b[0m\n'}
+[5.702459] (spark_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/lane_coeffs__type_support.cpp.o\x1b[0m\n'}
+[5.702665] (spark_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/msg/waypoint_data__type_support.cpp.o\x1b[0m\n'}
+[5.709895] (-) TimerEvent: {}
+[5.728505] (spark_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libspark_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.770277] (spark_msgs) StdoutLine: {'line': b'[ 85%] Built target spark_msgs__rosidl_typesupport_c\n'}
+[5.784825] (spark_msgs) StdoutLine: {'line': b'[ 85%] Built target spark_msgs\n'}
+[5.800377] (spark_msgs) StdoutLine: {'line': b'[ 86%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.809974] (-) TimerEvent: {}
+[5.910219] (-) TimerEvent: {}
+[6.010505] (-) TimerEvent: {}
+[6.110803] (-) TimerEvent: {}
+[6.211034] (-) TimerEvent: {}
+[6.311262] (-) TimerEvent: {}
+[6.411503] (-) TimerEvent: {}
+[6.511842] (-) TimerEvent: {}
+[6.612091] (-) TimerEvent: {}
+[6.712347] (-) TimerEvent: {}
+[6.812554] (-) TimerEvent: {}
+[6.912796] (-) TimerEvent: {}
+[7.013058] (-) TimerEvent: {}
+[7.069795] (spark_msgs) StdoutLine: {'line': b'[ 86%] Built target spark_msgs__py\n'}
+[7.081654] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__python\x1b[0m\n'}
+[7.113165] (-) TimerEvent: {}
+[7.120582] (spark_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_s.c.o\x1b[0m\n'}
+[7.120830] (spark_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_open_loop_speed_s.c.o\x1b[0m\n'}
+[7.121004] (spark_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_behaviour_state_s.c.o\x1b[0m\n'}
+[7.121105] (spark_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoints_s.c.o\x1b[0m\n'}
+[7.121204] (spark_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_lane_list_s.c.o\x1b[0m\n'}
+[7.121348] (spark_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_lane_s.c.o\x1b[0m\n'}
+[7.121451] (spark_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_goal_state_s.c.o\x1b[0m\n'}
+[7.121967] (spark_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_pose_s.c.o\x1b[0m\n'}
+[7.122183] (spark_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_multi_float64_s.c.o\x1b[0m\n'}
+[7.122399] (spark_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_lane_waypoints_s.c.o\x1b[0m\n'}
+[7.122651] (spark_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoints_list_s.c.o\x1b[0m\n'}
+[7.123800] (spark_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_lane_fit_quadratic_s.c.o\x1b[0m\n'}
+[7.208756] (spark_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o\x1b[0m\n'}
+[7.209012] (spark_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_lane_coeffs_s.c.o\x1b[0m\n'}
+[7.213272] (-) TimerEvent: {}
+[7.278106] (spark_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/spark_msgs/libspark_msgs__python.so\x1b[0m\n'}
+[7.313363] (-) TimerEvent: {}
+[7.321265] (spark_msgs) StdoutLine: {'line': b'[ 97%] Built target spark_msgs__python\n'}
+[7.329986] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.330298] (spark_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target spark_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.344373] (spark_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/spark_msgs/_spark_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[7.344831] (spark_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/spark_msgs/_spark_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.413482] (-) TimerEvent: {}
+[7.428712] (spark_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/spark_msgs/spark_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.429922] (spark_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/spark_msgs/spark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.473955] (spark_msgs) StdoutLine: {'line': b'[100%] Built target spark_msgs__rosidl_typesupport_c__pyext\n'}
+[7.474324] (spark_msgs) StdoutLine: {'line': b'[100%] Built target spark_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.483172] (spark_msgs) CommandEnded: {'returncode': 0}
+[7.513566] (-) TimerEvent: {}
+[7.613902] (-) TimerEvent: {}
+[7.645302] (spark_msgs) JobProgress: {'identifier': 'spark_msgs', 'progress': 'install'}
+[7.652251] (spark_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs', '--target', 'install', '--', '-j12', '-l12'], 'cwd': '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yigithan'), ('LC_TIME', 'tr_TR.UTF-8'), ('TEXTDOMAIN', 'im-config'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '2668'), ('XDG_SESSION_TYPE', 'x11'), ('LD_LIBRARY_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib:/usr/local/cuda/lib64'), ('SHLVL', '1'), ('OLDPWD', '/home/yigithan/lane_follower'), ('QT4_IM_MODULE', 'xim'), ('HOME', '/home/yigithan'), ('DESKTOP_SESSION', 'ubuntu'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'tr_TR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install'), ('IM_CONFIG_PHASE', '2'), ('ROS_DISTRO', 'dashing'), ('LOGNAME', 'yigithan'), ('GTK_IM_MODULE', 'ibus'), ('DESKTOP_AUTOSTART_ID', '1079c5211b71463399162062123512680200000025710007'), ('_', '/usr/bin/colcon'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('ROS_VERSION', '2'), ('USERNAME', 'yigithan'), ('XDG_SESSION_ID', '2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/dashing/bin:/usr/local/cuda/bin:/home/yigithan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/yigithan-Lenovo-Legion-7-15IMH05:@/tmp/.ICE-unix/2571,unix/yigithan-Lenovo-Legion-7-15IMH05:/tmp/.ICE-unix/2571'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d9b5defc_62a4_4a82_bbeb_79dad42d0093'), ('LC_ADDRESS', 'tr_TR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'tr_TR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XMODIFIERS', '@im=ibus'), ('GNOME_TERMINAL_SERVICE', ':1.72'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('AMENT_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector:/opt/ros/dashing'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('LC_NAME', 'tr_TR.UTF-8'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'tr_TR.UTF-8'), ('TEXTDOMAINDIR', '/usr/share/locale/'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'tr_TR.UTF-8'), ('XDG_VTNR', '2'), ('QT_IM_MODULE', 'ibus'), ('LC_ALL', 'en_US.UTF-8'), ('PWD', '/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs'), ('CLUTTER_IM_MODULE', 'xim'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('LC_NUMERIC', 'tr_TR.UTF-8'), ('PYTHONPATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:/opt/ros/dashing/lib/python3.6/site-packages'), ('LC_PAPER', 'tr_TR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '5202'), ('CMAKE_PREFIX_PATH', '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs:/home/yigithan/lane_follower/dev_ws/src/install/lane_detector:/opt/ros/dashing')]), 'shell': False}
+[7.695293] (spark_msgs) StdoutLine: {'line': b'[  0%] Built target spark_msgs__cpp\n'}
+[7.698678] (spark_msgs) StdoutLine: {'line': b'[ 12%] Built target spark_msgs__rosidl_generator_c\n'}
+[7.714031] (-) TimerEvent: {}
+[7.718441] (spark_msgs) StdoutLine: {'line': b'[ 25%] Built target spark_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.718910] (spark_msgs) StdoutLine: {'line': b'[ 37%] Built target spark_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.721787] (spark_msgs) StdoutLine: {'line': b'[ 49%] Built target spark_msgs__rosidl_typesupport_introspection_c\n'}
+[7.742581] (spark_msgs) StdoutLine: {'line': b'[ 73%] Built target spark_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.742780] (spark_msgs) StdoutLine: {'line': b'[ 73%] Built target spark_msgs__rosidl_typesupport_cpp\n'}
+[7.764901] (spark_msgs) StdoutLine: {'line': b'[ 85%] Built target spark_msgs__rosidl_typesupport_c\n'}
+[7.780432] (spark_msgs) StdoutLine: {'line': b'[ 85%] Built target spark_msgs\n'}
+[7.796644] (spark_msgs) StdoutLine: {'line': b'[ 86%] Built target spark_msgs__py\n'}
+[7.814154] (-) TimerEvent: {}
+[7.822956] (spark_msgs) StdoutLine: {'line': b'[ 97%] Built target spark_msgs__python\n'}
+[7.843095] (spark_msgs) StdoutLine: {'line': b'[ 98%] Built target spark_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.843321] (spark_msgs) StdoutLine: {'line': b'[100%] Built target spark_msgs__rosidl_typesupport_c__pyext\n'}
+[7.857487] (spark_msgs) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[7.864624] (spark_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.865317] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/ament_index/resource_index/rosidl_interfaces/spark_msgs\n'}
+[7.865444] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.865538] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.865608] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints.hpp\n'}
+[7.865684] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__traits.hpp\n'}
+[7.865752] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__traits.hpp\n'}
+[7.865818] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__traits.hpp\n'}
+[7.865899] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__traits.hpp\n'}
+[7.865964] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__traits.hpp\n'}
+[7.866028] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__struct.hpp\n'}
+[7.866101] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__struct.hpp\n'}
+[7.866167] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__traits.hpp\n'}
+[7.866231] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state.hpp\n'}
+[7.866305] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64.hpp\n'}
+[7.866368] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__struct.hpp\n'}
+[7.866433] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__traits.hpp\n'}
+[7.866496] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints.hpp\n'}
+[7.866571] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__struct.hpp\n'}
+[7.866637] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic.hpp\n'}
+[7.866702] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__traits.hpp\n'}
+[7.866776] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint.hpp\n'}
+[7.866844] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__traits.hpp\n'}
+[7.866907] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose.hpp\n'}
+[7.866981] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__struct.hpp\n'}
+[7.867045] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__traits.hpp\n'}
+[7.867110] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__traits.hpp\n'}
+[7.867174] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__traits.hpp\n'}
+[7.867247] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__struct.hpp\n'}
+[7.867312] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__struct.hpp\n'}
+[7.867375] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane.hpp\n'}
+[7.867477] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__struct.hpp\n'}
+[7.867587] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs.hpp\n'}
+[7.867686] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__struct.hpp\n'}
+[7.867753] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__struct.hpp\n'}
+[7.867827] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed.hpp\n'}
+[7.867894] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__struct.hpp\n'}
+[7.867959] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state.hpp\n'}
+[7.868033] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__struct.hpp\n'}
+[7.868099] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__struct.hpp\n'}
+[7.868162] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__traits.hpp\n'}
+[7.868259] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__traits.hpp\n'}
+[7.868335] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data.hpp\n'}
+[7.868408] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__struct.hpp\n'}
+[7.868477] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list.hpp\n'}
+[7.868546] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list.hpp\n'}
+[7.868617] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.868700] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.868802] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__functions.h\n'}
+[7.868891] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__struct.h\n'}
+[7.868991] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state.h\n'}
+[7.869073] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[7.869141] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__functions.c\n'}
+[7.869205] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__functions.c\n'}
+[7.869290] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__struct.h\n'}
+[7.869363] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__functions.c\n'}
+[7.869430] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__struct.h\n'}
+[7.869495] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__functions.h\n'}
+[7.869568] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic.h\n'}
+[7.869634] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__type_support.h\n'}
+[7.869696] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__struct.h\n'}
+[7.869771] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__type_support.h\n'}
+[7.869839] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__functions.h\n'}
+[7.869923] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane.h\n'}
+[7.870014] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__struct.h\n'}
+[7.870080] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__functions.h\n'}
+[7.870145] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint.h\n'}
+[7.870242] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__functions.c\n'}
+[7.870325] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64.h\n'}
+[7.870389] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__struct.h\n'}
+[7.870464] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__functions.h\n'}
+[7.870533] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__struct.h\n'}
+[7.870608] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__type_support.h\n'}
+[7.870674] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list.h\n'}
+[7.870738] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose.h\n'}
+[7.870813] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__struct.h\n'}
+[7.870877] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__functions.c\n'}
+[7.870951] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__type_support.h\n'}
+[7.871020] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__functions.c\n'}
+[7.871085] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__type_support.h\n'}
+[7.871158] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__type_support.h\n'}
+[7.871212] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__type_support.h\n'}
+[7.871275] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__type_support.h\n'}
+[7.871331] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints.h\n'}
+[7.871383] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__struct.h\n'}
+[7.871448] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state.h\n'}
+[7.871501] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data.h\n'}
+[7.871552] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed.h\n'}
+[7.871604] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__type_support.h\n'}
+[7.871679] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints.h\n'}
+[7.871758] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__functions.c\n'}
+[7.871811] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__functions.h\n'}
+[7.871873] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__functions.c\n'}
+[7.871947] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__functions.c\n'}
+[7.872004] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__type_support.h\n'}
+[7.872074] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__functions.h\n'}
+[7.872130] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__functions.c\n'}
+[7.872184] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__type_support.h\n'}
+[7.872253] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__struct.h\n'}
+[7.872317] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__functions.c\n'}
+[7.872373] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__functions.c\n'}
+[7.872455] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list.h\n'}
+[7.872539] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__functions.h\n'}
+[7.872605] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__functions.h\n'}
+[7.872673] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__functions.c\n'}
+[7.872748] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__functions.h\n'}
+[7.872820] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__functions.c\n'}
+[7.872885] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__functions.h\n'}
+[7.872975] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__type_support.h\n'}
+[7.873056] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__struct.h\n'}
+[7.873121] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__struct.h\n'}
+[7.873186] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__functions.h\n'}
+[7.873293] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__type_support.h\n'}
+[7.873368] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__struct.h\n'}
+[7.873433] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__struct.h\n'}
+[7.873500] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__functions.h\n'}
+[7.873574] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs.h\n'}
+[7.873662] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__type_support.h\n'}
+[7.873754] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__functions.h\n'}
+[7.873875] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/environment/library_path.sh\n'}
+[7.873961] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_generator_c.so\n'}
+[7.874039] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_generator_c.so" to ""\n'}
+[7.874108] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_c.so\n'}
+[7.874177] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_c.so" to ""\n'}
+[7.874245] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_cpp.so\n'}
+[7.874299] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[7.874356] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.874424] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.874479] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__type_support.c\n'}
+[7.874533] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__rosidl_typesupport_introspection_c.h\n'}
+[7.874590] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__rosidl_typesupport_introspection_c.h\n'}
+[7.874668] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__type_support.c\n'}
+[7.874746] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__type_support.c\n'}
+[7.874814] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[7.874893] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__rosidl_typesupport_introspection_c.h\n'}
+[7.874962] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__rosidl_typesupport_introspection_c.h\n'}
+[7.875029] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__type_support.c\n'}
+[7.875106] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__type_support.c\n'}
+[7.875175] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__rosidl_typesupport_introspection_c.h\n'}
+[7.875243] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__rosidl_typesupport_introspection_c.h\n'}
+[7.875320] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__rosidl_typesupport_introspection_c.h\n'}
+[7.875392] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__rosidl_typesupport_introspection_c.h\n'}
+[7.875462] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__rosidl_typesupport_introspection_c.h\n'}
+[7.875536] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__rosidl_typesupport_introspection_c.h\n'}
+[7.875614] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__type_support.c\n'}
+[7.875683] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__rosidl_typesupport_introspection_c.h\n'}
+[7.875753] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__rosidl_typesupport_introspection_c.h\n'}
+[7.875839] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__type_support.c\n'}
+[7.875907] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__rosidl_typesupport_introspection_c.h\n'}
+[7.875990] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__type_support.c\n'}
+[7.876059] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__type_support.c\n'}
+[7.876126] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__type_support.c\n'}
+[7.876194] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__type_support.c\n'}
+[7.876262] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__type_support.c\n'}
+[7.876331] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__rosidl_typesupport_introspection_c.h\n'}
+[7.876386] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__type_support.c\n'}
+[7.876440] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__type_support.c\n'}
+[7.876514] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_introspection_c.so\n'}
+[7.876572] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[7.876626] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.876681] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.876736] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__type_support.cpp\n'}
+[7.876810] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.876901] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.876967] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877041] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__type_support.cpp\n'}
+[7.877110] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__type_support.cpp\n'}
+[7.877186] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877255] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877323] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__type_support.cpp\n'}
+[7.877388] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__type_support.cpp\n'}
+[7.877465] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877534] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__type_support.cpp\n'}
+[7.877605] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877675] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877728] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.877785] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__type_support.cpp\n'}
+[7.877861] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__type_support.cpp\n'}
+[7.877916] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__type_support.cpp\n'}
+[7.877971] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__type_support.cpp\n'}
+[7.878025] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.878091] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.878174] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.878243] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__type_support.cpp\n'}
+[7.878311] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.878387] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[7.878462] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__type_support.cpp\n'}
+[7.878530] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__type_support.cpp\n'}
+[7.878606] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__type_support.cpp\n'}
+[7.878675] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[7.878776] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[7.878846] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.878914] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.878982] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879037] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879090] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[7.879157] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879211] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879265] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879319] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879374] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879443] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879519] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879574] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879633] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879689] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879744] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879803] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__rosidl_typesupport_fastrtps_c.h\n'}
+[7.879857] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[7.879911] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[7.879964] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs\n'}
+[7.880017] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg\n'}
+[7.880070] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/behaviour_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880125] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880179] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880233] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880298] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/dds_fastrtps\n'}
+[7.880366] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[7.880417] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_waypoints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880468] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_coeffs__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880519] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_fit_quadratic__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880571] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880625] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/multi_float64__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880696] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/waypoint__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880750] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880803] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/lane_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880856] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/open_loop_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880909] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/include/spark_msgs/msg/goal_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[7.880978] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[7.881032] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[7.881085] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/environment/pythonpath.sh\n'}
+[7.881138] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/__init__.py\n'}
+[7.905687] (spark_msgs) StdoutLine: {'line': b"Compiling '/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/__init__.py'...\n"}
+[7.908486] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg\n'}
+[7.908615] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_goal_state_s.c\n'}
+[7.908717] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_list.py\n'}
+[7.908808] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_coeffs_s.c\n'}
+[7.908880] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_coeffs.py\n'}
+[7.908997] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoints_list_s.c\n'}
+[7.909068] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_multi_float64_s.c\n'}
+[7.909157] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoint.py\n'}
+[7.909225] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/__init__.py\n'}
+[7.909296] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoint_data.py\n'}
+[7.909369] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_waypoints.py\n'}
+[7.909437] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_open_loop_speed_s.c\n'}
+[7.909515] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoint_data_s.c\n'}
+[7.909584] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_multi_float64.py\n'}
+[7.909652] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoints_s.c\n'}
+[7.909720] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_open_loop_speed.py\n'}
+[7.909788] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_goal_state.py\n'}
+[7.909865] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_fit_quadratic_s.c\n'}
+[7.909939] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_pose.py\n'}
+[7.910007] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoints_list.py\n'}
+[7.910082] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_waypoints_s.c\n'}
+[7.910154] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_s.c\n'}
+[7.910209] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_behaviour_state_s.c\n'}
+[7.910262] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_list_s.c\n'}
+[7.910316] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane.py\n'}
+[7.910374] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_lane_fit_quadratic.py\n'}
+[7.910428] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_pose_s.c\n'}
+[7.910507] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_behaviour_state.py\n'}
+[7.910562] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoints.py\n'}
+[7.910617] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/msg/_waypoint_s.c\n'}
+[7.910670] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/spark_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[7.910774] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/spark_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so" to ""\n'}
+[7.911013] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/spark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so\n'}
+[7.911336] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/python3.6/site-packages/spark_msgs/spark_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so" to ""\n'}
+[7.911457] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__python.so\n'}
+[7.911739] (spark_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/lib/libspark_msgs__python.so" to ""\n'}
+[7.911806] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/OpenLoopSpeed.idl\n'}
+[7.911886] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Pose.idl\n'}
+[7.911961] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Waypoint.idl\n'}
+[7.912040] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Waypoints.idl\n'}
+[7.912109] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/GoalState.idl\n'}
+[7.912186] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/BehaviourState.idl\n'}
+[7.912262] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneList.idl\n'}
+[7.912330] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Lane.idl\n'}
+[7.912385] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/MultiFloat64.idl\n'}
+[7.912466] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneFitQuadratic.idl\n'}
+[7.912521] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneWaypoints.idl\n'}
+[7.912596] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/WaypointsList.idl\n'}
+[7.912675] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneCoeffs.idl\n'}
+[7.912753] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/WaypointData.idl\n'}
+[7.912831] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/OpenLoopSpeed.msg\n'}
+[7.912909] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Pose.msg\n'}
+[7.912987] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Waypoint.msg\n'}
+[7.913066] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Waypoints.msg\n'}
+[7.913120] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/GoalState.msg\n'}
+[7.913190] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/BehaviourState.msg\n'}
+[7.913283] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneList.msg\n'}
+[7.913356] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/Lane.msg\n'}
+[7.913429] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/MultiFloat64.msg\n'}
+[7.913493] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneFitQuadratic.msg\n'}
+[7.913566] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneWaypoints.msg\n'}
+[7.913637] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/WaypointsList.msg\n'}
+[7.913722] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/LaneCoeffs.msg\n'}
+[7.913774] (spark_msgs) StdoutLine: {'line': b'-- Installing: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/msg/WaypointData.msg\n'}
+[7.913826] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/ament_index/resource_index/package_run_dependencies/spark_msgs\n'}
+[7.913897] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/ament_index/resource_index/parent_prefix_path/spark_msgs\n'}
+[7.913951] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/environment/ament_prefix_path.sh\n'}
+[7.914002] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/environment/path.sh\n'}
+[7.914053] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/local_setup.bash\n'}
+[7.914106] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/local_setup.sh\n'}
+[7.914155] (-) TimerEvent: {}
+[7.914231] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/local_setup.zsh\n'}
+[7.914291] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/ament_index/resource_index/packages/spark_msgs\n'}
+[7.914344] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[7.914397] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[7.914449] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[7.914501] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[7.914552] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/spark_msgsConfig.cmake\n'}
+[7.914604] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/cmake/spark_msgsConfig-version.cmake\n'}
+[7.914677] (spark_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yigithan/lane_follower/dev_ws/src/install/spark_msgs/share/spark_msgs/package.xml\n'}
+[7.916059] (spark_msgs) CommandEnded: {'returncode': 0}
+[8.014277] (-) TimerEvent: {}
+[8.096874] (spark_msgs) JobEnded: {'identifier': 'spark_msgs', 'rc': 0}
+[8.097646] (-) EventReactorShutdown: {}

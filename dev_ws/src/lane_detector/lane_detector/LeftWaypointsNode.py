@@ -23,25 +23,35 @@ class LeftWaypointsNode(Node):
         )
 
 
-    def callback(self, msg):
+    def callback(self, msg,n_samples = 100):
         slope = msg.slope
         bias = msg.bias
 
         t_slope, t_bias = self.transform(slope, bias)
-        line = np.poly1d([t_slope, t_bias])
 
+        if t_slope is not np.inf:
+            line = np.poly1d([t_slope, t_bias])
 
-        # Implement the line near the middle of the x axis
-        n_samples = 100
+            # Implement the line near the middle of the x axis
+            x_space = np.linspace(540-(n_samples/2),540+(n_samples/2) ,n_samples + 1, dtype="float64")
+            y_space = line(x_space)
 
-        x_space = np.linspace(1080-(n_samples/2),1080+(n_samples/2) ,n_samples + 1, dtype="float64")
-        y_space = line(x_space)
+            data = WaypointData()
 
-        data = WaypointData()
-        data.x = list(x_space)
-        data.y = list(y_space)
+            data.is_inf = False
+            data.x = list(x_space)
+            data.y = list(y_space)
 
-        self.publisher.publish(data)
+            self.publisher.publish(data)
+
+        else:
+            data = WaypointData()
+
+            data.is_inf = True
+            data.x = [t_bias]*n_samples
+            data.y = list(np.linspace(1920-n_samples, 1920, n_samples+1).astype("float64"))
+
+            self.publisher.publish(data)
 
 
     def transform(self, slope, bias, vertical_slope_thresh=40):
