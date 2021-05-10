@@ -1,8 +1,6 @@
 import time
-
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 
 
 class BinaryToFit:
@@ -29,7 +27,7 @@ class BinaryToFit:
         self.binary_image = cv2.rotate(binary_image, self.image_rotation_matrix)
 
         # If last image detected a line don't calculate the histogram again
-        if False:
+        if self.detected:
             x, y = self.searchAroundPoly()
         else:
             x, y = self.applyHistorgram()

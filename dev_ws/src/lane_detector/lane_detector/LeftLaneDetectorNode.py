@@ -29,7 +29,8 @@ class LaneDetectorNode(Node):
         self.bridge = CvBridge()
 
 
-        self.model_path = "/home/yigithan/lane_follower/dev_ws/src/lane_detector/lane_detector/models/final_9_batch_8.model"
+        self.model_path = "/home/sutchu/PycharmProjects/lane_follower/dev_ws/src/lane_detector/lane_detector/models" \
+                          "/final_9_batch_8.model"
 
         self.model_object, self.device = load_model(self.model_path)
 

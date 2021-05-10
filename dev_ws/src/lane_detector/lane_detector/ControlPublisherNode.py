@@ -6,9 +6,6 @@ from spark_msgs.msg import LaneCoeffs
 import numpy as np
 import math
 
-deneme = Odometry()
-
-
 class ControlPublisherNode(Node):
     def __init__(self):
         super().__init__("ControlPublisher")
@@ -32,9 +29,14 @@ class ControlPublisherNode(Node):
             self.callback,
             1
         )
+        self.control = VehicleControlData()
+        self.pidControl = PIDControl(self.sendSteering)
 
+    def sendSteering(self, angle):
+        self.control.targetWheelAngle(angle)
+        self.publisher.publish(control)
 
-    def callback(self, msg, y_intercept = 200, x_interval = (0,256)):
+    def callback(self, msg, y_intercept=200, x_interval=(0, 256)):
         coeffs = np.array(list(msg.coeffs))
         coeffs[2] -= y_intercept
 
@@ -48,15 +50,9 @@ class ControlPublisherNode(Node):
         else:
             root = root[0]
 
-        control = VehicleControlData()
+        self.pidControl.updatePID(root)
 
-
-
-        #control.acceleration_pct = 0.1
-
-        self.publisher.publish(control)
-
-    def vehicle_callback(self, msg, limit_speed = 1):
+    def vehicle_callback(self, msg, limit_speed=1):
         speed = msg.twist.twist.linear.x
         control = VehicleControlData()
         if speed < limit_speed:
@@ -67,12 +63,9 @@ class ControlPublisherNode(Node):
 
         self.publisher.publish(control)
 
-
-
-
     def transform(self, slope, bias, vertical_slope_thresh=20):
         # Rotate the line 90 degrees
-        rot_slope = (1/slope)
+        rot_slope = (1 / slope)
         rot_bias = bias
 
         # If slope's absolute value is greater than threshold, the line is vertical
@@ -95,4 +88,3 @@ def main(args=None):
 
 if __name__ == "__main__":
     main()
-

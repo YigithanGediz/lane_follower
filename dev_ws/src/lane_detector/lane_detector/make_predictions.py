@@ -114,7 +114,7 @@ device: PyTorch device for evaluating. cpu or gpu are the options
 
 
 def load_model(model_path, device_name="gpu"):
-    device = torch.device('cuda') if torch.cuda.is_available() and device_name == "gpu" else torch.device('cpu')
+    device = torch.device('cuda')
     LaneNet_model = Lanenet(2, 4)
     LaneNet_model.load_state_dict(torch.load(model_path))
     LaneNet_model.to(device)
