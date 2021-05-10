@@ -3,17 +3,17 @@ import numpy as np
 
 
 class PIDControl:
-    def __init__(self, send_steering_callback, default_y=180):
+    def __init__(self, send_steering_callback, default_y=107):
         self.y = 0.0
         self.send_steering_callback = send_steering_callback
         self.default_y = default_y
 
-        self.prev_cte = self.getError()
+        self.prev_cte = self._getError()
         self.int_cte = 0
         self.tau_p, self.tau_d, self.tau_i = 0.2, 3.0, 0.004
 
     def _getError(self):
-        return 1 / (self.y - self.default_y)
+        return 1 / (self.default_y - self.y)
 
     def _move(self, steering):
         self.send_steering_callback(steering)

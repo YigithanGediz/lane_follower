@@ -6,6 +6,9 @@ from spark_msgs.msg import LaneCoeffs
 import numpy as np
 import math
 
+from .PIDControl import PIDControl
+
+
 class ControlPublisherNode(Node):
     def __init__(self):
         super().__init__("ControlPublisher")
@@ -33,23 +36,13 @@ class ControlPublisherNode(Node):
         self.pidControl = PIDControl(self.sendSteering)
 
     def sendSteering(self, angle):
-        self.control.targetWheelAngle(angle)
-        self.publisher.publish(control)
+        self.control.target_wheel_angle = angle
+        self.publisher.publish(self.control)
 
     def callback(self, msg, y_intercept=200, x_interval=(0, 256)):
         coeffs = np.array(list(msg.coeffs))
-        coeffs[2] -= y_intercept
-
-        roots = np.roots(coeffs)
-
-        root = [number for number in roots if (np.isreal(number) and number < x_interval[1] and number > x_interval[0])]
-
-        if len(root) == 0:
-            root = -1
-
-        else:
-            root = root[0]
-
+        poly = np.poly1d(coeffs)
+        root = poly(y_intercept)
         self.pidControl.updatePID(root)
 
     def vehicle_callback(self, msg, limit_speed=1):
