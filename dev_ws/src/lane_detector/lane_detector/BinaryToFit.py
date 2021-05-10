@@ -10,7 +10,7 @@ class BinaryToFit:
         # was the line detected in the last iteration?
         self.detected = False
         # x values of the last n fits of the line
-        self.recent_xfit = [0, 0]
+        self.recent_xfit = [0, 0, 0]
         # whether oor not to draw results to cv2 (use for debugging)
         self.show_results = show_results
         # the most resent binary_image
@@ -29,7 +29,7 @@ class BinaryToFit:
         self.binary_image = cv2.rotate(binary_image, self.image_rotation_matrix)
 
         # If last image detected a line don't calculate the histogram again
-        if self.detected == True:
+        if False:
             x, y = self.searchAroundPoly()
         else:
             x, y = self.applyHistorgram()
@@ -103,7 +103,7 @@ class BinaryToFit:
         # HYPERPARAMETER
         # Choose the width of the margin around the previous polynomial to search
         # The quiz grader expects 100 here, but feel free to tune on your own!
-        margin = 100
+        margin = 20
 
         # Grab activated pixels
         nonzero = self.binary_image.nonzero()
@@ -114,8 +114,8 @@ class BinaryToFit:
         # within the +/- margin of our polynomial function
         # Hint: consider the window areas for the similarly named variables
         # in the previous quiz, but change the windows to our new search area
-        lane_inds = ((nonzerox < (self.recent_xfit[0] * nonzeroy + self.recent_xfit[1] + margin))
-                     & (nonzerox > (self.recent_xfit[0] * nonzeroy + self.recent_xfit[1] - margin)))
+        lane_inds = ((nonzerox < (self.recent_xfit[0] * (nonzeroy**2) + self.recent_xfit[1] * nonzeroy + self.recent_xfit[2] + margin))
+                     & (nonzerox > (self.recent_xfit[0] * (nonzeroy**2) + self.recent_xfit[1] * nonzeroy + self.recent_xfit[2] - margin)))
 
         # Again, extract left and right line pixel positions
         x = nonzerox[lane_inds]
@@ -126,12 +126,12 @@ class BinaryToFit:
     def fitPoly(self, x, y, binary_image_shape):
         try:
             # Fit a first order polynomial to each with np.polyfit()
-            fit = np.polyfit(x, y, 1)
-            if abs(self.recent_xfit[0] - fit[0]) < 0.3 or self.outlied:
+            self.recent_xfit = np.polyfit(x, y, 2)
+            '''if abs(self.recent_xfit[0] - fit[0]) < 0.3 or self.outlied:
                 self.recent_xfit = fit
                 self.outlied = False
             else:
-                self.outlied = True
+                self.outlied = True'''
 
         except:
             self.detected = False
@@ -144,7 +144,7 @@ class BinaryToFit:
             # Generate x and y values for plotting
             ploty = np.linspace(0, binary_image_shape[0] - 1, binary_image_shape[0], dtype=np.int32)
             try:
-                plotx = self.recent_xfit[0] * ploty + self.recent_xfit[1]
+                plotx = self.recent_xfit[0] * (ploty**2) + self.recent_xfit[1] * ploty + self.recent_xfit[2]
             except TypeError:
                 # Avoids an error if `left` and `right_fit` are still none or incorrect
                 print('The function failed to fit a line!')
@@ -158,9 +158,9 @@ class BinaryToFit:
 
 
 if __name__ == '__main__':
-    fitter = BinaryToFit(show_results=True, camera_type='left')
+    fitter = BinaryToFit(show_results=True, camera_type='right')
 
-    for i in range(1000):
+    for i in range(133, 154):
         start = time.time()
         image = cv2.imread(f"./predictions/camera{i}.png")
         image = image[:, :, 0] / 255
