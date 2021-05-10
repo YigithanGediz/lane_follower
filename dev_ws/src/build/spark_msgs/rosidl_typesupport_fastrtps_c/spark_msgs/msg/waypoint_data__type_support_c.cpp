@@ -51,6 +51,11 @@ static bool _WaypointData__cdr_serialize(
     return false;
   }
   const _WaypointData__ros_msg_type * ros_message = static_cast<const _WaypointData__ros_msg_type *>(untyped_ros_message);
+  // Field name: is_inf
+  {
+    cdr << (ros_message->is_inf ? true : false);
+  }
+
   // Field name: x
   {
     size_t size = ros_message->x.size;
@@ -79,6 +84,13 @@ static bool _WaypointData__cdr_deserialize(
     return false;
   }
   _WaypointData__ros_msg_type * ros_message = static_cast<_WaypointData__ros_msg_type *>(untyped_ros_message);
+  // Field name: is_inf
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->is_inf = tmp ? true : false;
+  }
+
   // Field name: x
   {
     uint32_t cdrSize;
@@ -126,6 +138,12 @@ size_t get_serialized_size_spark_msgs__msg__WaypointData(
   (void)padding;
   (void)wchar_size;
 
+  // field.name is_inf
+  {
+    size_t item_size = sizeof(ros_message->is_inf);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name x
   {
     size_t array_size = ros_message->x.size;
@@ -172,6 +190,12 @@ size_t max_serialized_size_spark_msgs__msg__WaypointData(
   (void)wchar_size;
   (void)full_bounded;
 
+  // member: is_inf
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
   // member: x
   {
     size_t array_size = 0;

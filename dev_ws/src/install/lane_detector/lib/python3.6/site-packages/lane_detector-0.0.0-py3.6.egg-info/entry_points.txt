@@ -3,4 +3,5 @@ left_lane_detection = lane_detector.LeftLaneDetectorNode:main
 left_waypoints = lane_detector.LeftWaypointsNode:main
 process_lanes = lane_detector.ProcessLaneNode:main
 right_lane_detection = lane_detector.RightLaneDetectorNode:main
+show_left_waypoints = lane_detector.ShowLeftWaypointsNode:main
 

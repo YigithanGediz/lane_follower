@@ -55,7 +55,7 @@ class LaneDetectorNode(Node):
 
         toc = time.time()
 
-        print(f"Fps of left callback = {1 / (toc - tic)}")
+        #print(f"Fps of left callback = {1 / (toc - tic)}")
 
 def main(args=None):
     rclpy.init(args=args)

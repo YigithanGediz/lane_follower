@@ -54,7 +54,7 @@ class LaneDetectorNode(Node):
 
         toc = time.time()
 
-        print(f"Fps of right callback = {1/(toc-tic)}")
+        #print(f"Fps of right callback = {1/(toc-tic)}")
 
 
 def main(args=None):

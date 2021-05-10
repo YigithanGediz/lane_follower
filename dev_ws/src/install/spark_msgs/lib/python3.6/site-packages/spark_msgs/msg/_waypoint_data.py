@@ -57,16 +57,19 @@ class WaypointData(metaclass=Metaclass_WaypointData):
     """Message class 'WaypointData'."""
 
     __slots__ = [
+        '_is_inf',
         '_x',
         '_y',
     ]
 
     _fields_and_field_types = {
+        'is_inf': 'boolean',
         'x': 'sequence<double>',
         'y': 'sequence<double>',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
     )
@@ -75,6 +78,7 @@ class WaypointData(metaclass=Metaclass_WaypointData):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.is_inf = kwargs.get('is_inf', bool())
         self.x = array.array('d', kwargs.get('x', []))
         self.y = array.array('d', kwargs.get('y', []))
 
@@ -107,6 +111,8 @@ class WaypointData(metaclass=Metaclass_WaypointData):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.is_inf != other.is_inf:
+            return False
         if self.x != other.x:
             return False
         if self.y != other.y:
@@ -117,6 +123,19 @@ class WaypointData(metaclass=Metaclass_WaypointData):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @property
+    def is_inf(self):
+        """Message field 'is_inf'."""
+        return self._is_inf
+
+    @is_inf.setter
+    def is_inf(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'is_inf' field must be of type 'bool'"
+        self._is_inf = value
 
     @property
     def x(self):

@@ -22,6 +22,12 @@ class LeftWaypointsNode(Node):
             1
         )
 
+        self.publisher2 = self.create_publisher(
+            LaneCoeffs,
+            "/lane_detection/left_waypoint_coeffs",
+            1
+        )
+
 
     def callback(self, msg,n_samples = 100):
         slope = msg.slope
@@ -37,27 +43,39 @@ class LeftWaypointsNode(Node):
             y_space = line(x_space)
 
             data = WaypointData()
+            data2 = LaneCoeffs()
 
             data.is_inf = False
             data.x = list(x_space)
             data.y = list(y_space)
 
+            data2.name = "Rotated"
+            data2.slope = t_slope
+            data2.bias = t_bias
+
+            self.publisher2.publish(data2)
             self.publisher.publish(data)
 
         else:
             data = WaypointData()
+            data2 = LaneCoeffs()
 
             data.is_inf = True
-            data.x = [t_bias]*n_samples
+            data.x = [t_bias+200]*n_samples
             data.y = list(np.linspace(1920-n_samples, 1920, n_samples+1).astype("float64"))
 
+            data2.name = "Vertical"
+            data2.slope = 999999999999999.
+            data2.bias = t_bias
+
+            self.publisher2.publish(data2)
             self.publisher.publish(data)
 
 
-    def transform(self, slope, bias, vertical_slope_thresh=40):
+    def transform(self, slope, bias, vertical_slope_thresh=20):
         # Rotate the line 90 degrees clockwise
-        rot_slope = (-1/slope)
-        rot_bias = (bias/slope)
+        rot_slope = (1/slope)
+        rot_bias = (-1*bias/slope)
 
         # If slope's absolute value is greater than threshold, the line is vertical
         if abs(rot_slope) >= vertical_slope_thresh:

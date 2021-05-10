@@ -25,6 +25,7 @@ extern "C"
 // Struct defined in msg/WaypointData in the package spark_msgs.
 typedef struct spark_msgs__msg__WaypointData
 {
+  bool is_inf;
   rosidl_generator_c__double__Sequence x;
   rosidl_generator_c__double__Sequence y;
 } spark_msgs__msg__WaypointData;

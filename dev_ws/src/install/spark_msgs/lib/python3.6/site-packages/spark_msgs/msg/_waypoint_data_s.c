@@ -55,6 +55,15 @@ bool spark_msgs__msg__waypoint_data__convert_from_py(PyObject * _pymsg, void * _
         full_classname_dest, 42) == 0);
   }
   spark_msgs__msg__WaypointData * ros_message = _ros_message;
+  {  // is_inf
+    PyObject * field = PyObject_GetAttrString(_pymsg, "is_inf");
+    if (!field) {
+      return false;
+    }
+    assert(PyBool_Check(field));
+    ros_message->is_inf = (Py_True == field);
+    Py_DECREF(field);
+  }
   {  // x
     PyObject * field = PyObject_GetAttrString(_pymsg, "x");
     if (!field) {
@@ -151,6 +160,17 @@ PyObject * spark_msgs__msg__waypoint_data__convert_to_py(void * raw_ros_message)
     }
   }
   spark_msgs__msg__WaypointData * ros_message = (spark_msgs__msg__WaypointData *)raw_ros_message;
+  {  // is_inf
+    PyObject * field = NULL;
+    field = PyBool_FromLong(ros_message->is_inf ? 1 : 0);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "is_inf", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // x
     PyObject * field = NULL;
     field = PyObject_GetAttrString(_pymessage, "x");

@@ -21,7 +21,22 @@ extern "C"
 {
 #endif
 
-static rosidl_typesupport_introspection_c__MessageMember WaypointData__rosidl_typesupport_introspection_c__WaypointData_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember WaypointData__rosidl_typesupport_introspection_c__WaypointData_message_member_array[3] = {
+  {
+    "is_inf",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(spark_msgs__msg__WaypointData, is_inf),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
@@ -57,7 +72,7 @@ static rosidl_typesupport_introspection_c__MessageMember WaypointData__rosidl_ty
 static const rosidl_typesupport_introspection_c__MessageMembers WaypointData__rosidl_typesupport_introspection_c__WaypointData_message_members = {
   "spark_msgs__msg",  // message namespace
   "WaypointData",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(spark_msgs__msg__WaypointData),
   WaypointData__rosidl_typesupport_introspection_c__WaypointData_message_member_array  // message members
 };

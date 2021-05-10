@@ -20,6 +20,7 @@ spark_msgs__msg__WaypointData__init(spark_msgs__msg__WaypointData * msg)
   if (!msg) {
     return false;
   }
+  // is_inf
   // x
   if (!rosidl_generator_c__double__Sequence__init(&msg->x, 0)) {
     spark_msgs__msg__WaypointData__fini(msg);
@@ -39,6 +40,7 @@ spark_msgs__msg__WaypointData__fini(spark_msgs__msg__WaypointData * msg)
   if (!msg) {
     return;
   }
+  // is_inf
   // x
   rosidl_generator_c__double__Sequence__fini(&msg->x);
   // y

@@ -27,7 +27,7 @@ class ShowLeftWaypointsNode(Node):
 
         self.waypoint_image_publisher = self.create_publisher(
             Image,
-            "/lane_detection/waypoint_view",
+            "/lane_detection/left_waypoint_view",
             1
         )
 
@@ -42,11 +42,11 @@ class ShowLeftWaypointsNode(Node):
     def waypoint_callback(self, msg):
         if self.image is not None:
             img = np.copy(self.image)
-            x_space = msg.x
-            y_space = msg.y
+            x_space = list(msg.x)
+            y_space = list(msg.y)
 
             for x,y in zip(x_space, y_space):
-                cv2.circle(img, center=(x,y), radius=3, thickness=3,color=(255,0,0))
+                cv2.circle(img, center=(int(x),int(y)), radius=5, thickness=5,color=(0,0,255))
 
             self.waypoint_image_publisher.publish(self.bridge.cv2_to_imgmsg(img))
 
