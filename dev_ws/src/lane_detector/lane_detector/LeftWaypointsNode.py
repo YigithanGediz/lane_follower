@@ -47,11 +47,12 @@ class LeftWaypointsNode(Node):
     def transform(self, slope, bias, vertical_slope_thresh=40):
         # Rotate the line 90 degrees clockwise
         rot_slope = (-1/slope)
-        rot_bias = bias
+        rot_bias = (bias/slope)
 
         # If slope's absolute value is greater than threshold, the line is vertical
         if abs(rot_slope) >= vertical_slope_thresh:
             rot_slope = np.inf
+            rot_bias = bias
 
         return (rot_slope, rot_bias)
 
