@@ -10,10 +10,10 @@ class PIDControl:
 
         self.prev_cte = self._getError()
         self.int_cte = 0
-        self.tau_p, self.tau_d, self.tau_i = 0.2, 3.0, 0.004
+        self.tau_p, self.tau_d, self.tau_i = 0.5, 3.0, 0.004
 
     def _getError(self):
-        return 1 / (self.default_y - self.y)
+        return self.default_y - self.y
 
     def _move(self, steering):
         self.send_steering_callback(steering)
@@ -25,4 +25,4 @@ class PIDControl:
         self.prev_cte = cte
         self.int_cte += cte
         steer = -self.tau_p * cte - self.tau_d * diff_cte - self.tau_i * self.int_cte
-        self._move(steer)
+        self._move(steer*np.pi)

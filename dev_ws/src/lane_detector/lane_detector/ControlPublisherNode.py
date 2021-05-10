@@ -39,7 +39,7 @@ class ControlPublisherNode(Node):
         self.control.target_wheel_angle = angle
         self.publisher.publish(self.control)
 
-    def callback(self, msg, y_intercept=200, x_interval=(0, 256)):
+    def callback(self, msg, y_intercept=400, x_interval=(0, 256)):
         coeffs = np.array(list(msg.coeffs))
         poly = np.poly1d(coeffs)
         root = poly(y_intercept)

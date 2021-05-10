@@ -1,6 +1,8 @@
 import time
+
 import cv2
 import numpy as np
+from matplotlib import pyplot as plt
 
 
 class BinaryToFit:
@@ -27,7 +29,7 @@ class BinaryToFit:
         self.binary_image = cv2.rotate(binary_image, self.image_rotation_matrix)
 
         # If last image detected a line don't calculate the histogram again
-        if self.detected:
+        if False:
             x, y = self.searchAroundPoly()
         else:
             x, y = self.applyHistorgram()
@@ -151,14 +153,15 @@ class BinaryToFit:
 
             plotx = np.int32(plotx)
             cv2.polylines(draw_img, [np.asarray([plotx, ploty]).T], False, (0, 0, 255), thickness=3)
+            cv2.circle(draw_img, (107, 200), radius=5, color=(255, 255, 0))
             cv2.imshow(self.camera_type, draw_img)
-            cv2.waitKey(1)
+            cv2.waitKey(500)
 
 
 if __name__ == '__main__':
     fitter = BinaryToFit(show_results=True, camera_type='right')
 
-    for i in range(133, 154):
+    for i in range(133, 152):
         start = time.time()
         image = cv2.imread(f"./predictions/camera{i}.png")
         image = image[:, :, 0] / 255
