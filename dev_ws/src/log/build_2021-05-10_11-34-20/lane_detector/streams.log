@@ -1,0 +1,28 @@
+[0.366s] Invoking command in '/home/yigithan/lane_follower/dev_ws/src/lane_detector': PYTHONPATH=/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lane_detector build --build-base /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build install --prefix /home/yigithan/lane_follower/dev_ws/src/install/lane_detector --record /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log --single-version-externally-managed
+[0.713s] running egg_info
+[0.713s] writing ../build/lane_detector/lane_detector.egg-info/PKG-INFO
+[0.714s] writing dependency_links to ../build/lane_detector/lane_detector.egg-info/dependency_links.txt
+[0.714s] writing entry points to ../build/lane_detector/lane_detector.egg-info/entry_points.txt
+[0.714s] writing requirements to ../build/lane_detector/lane_detector.egg-info/requires.txt
+[0.714s] writing top-level names to ../build/lane_detector/lane_detector.egg-info/top_level.txt
+[0.745s] reading manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'
+[0.747s] writing manifest file '../build/lane_detector/lane_detector.egg-info/SOURCES.txt'
+[0.747s] running build
+[0.747s] running build_py
+[0.747s] copying lane_detector/ProcessLaneNode.py -> /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector
+[0.748s] running install
+[0.748s] running install_lib
+[0.750s] copying /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build/lib/lane_detector/ProcessLaneNode.py -> /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector
+[0.751s] byte-compiling /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ProcessLaneNode.py to ProcessLaneNode.cpython-36.pyc
+[0.752s] running install_data
+[0.753s] running install_egg_info
+[0.755s] removing '/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info' (and everything under it)
+[0.755s] Copying ../build/lane_detector/lane_detector.egg-info to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info
+[0.756s] running install_scripts
+[0.780s] Installing left_lane_detection script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.780s] Installing left_waypoints script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.780s] Installing process_lanes script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.780s] Installing right_lane_detection script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.781s] Installing show_left_waypoints script to /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector
+[0.781s] writing list of installed files to '/home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log'
+[0.843s] Invoked command in '/home/yigithan/lane_follower/dev_ws/src/lane_detector' returned '0': PYTHONPATH=/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/lane_detector build --build-base /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/build install --prefix /home/yigithan/lane_follower/dev_ws/src/install/lane_detector --record /home/yigithan/lane_follower/dev_ws/src/build/lane_detector/install.log --single-version-externally-managed
