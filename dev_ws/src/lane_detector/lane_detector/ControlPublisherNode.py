@@ -46,14 +46,14 @@ class ControlPublisherNode(Node):
         root = poly(y_intercept)
         self.pidControl.updateError(root)
 
-    def vehicle_callback(self, msg, limit_speed=10):
+    def vehicle_callback(self, msg, limit_speed=2):
         speed = msg.twist.twist.linear.x
         if speed < limit_speed:
-            self.control.acceleration_pct = 0.5
+            self.control.acceleration_pct = 0.1
             self.control.braking_pct = 0.0
 
         elif speed > limit_speed:
-            self.control.braking_pct = 0.5
+            self.control.braking_pct = 0.2
             self.control.acceleration_pct = 0.0
 
     def transform(self, slope, bias, vertical_slope_thresh=20):

@@ -41,7 +41,7 @@ class ProcessLaneNode(Node):
             self.left_listener_callback,
             1)
 
-        self.leftCameraFitter = BinaryToFit(show_results=True, camera_type="left")
+        self.leftCameraFitter = BinaryToFit(show_results=False, camera_type="left")
         self.rightCameraFitter = BinaryToFit(show_results=False, camera_type="right")
         self.bridge = CvBridge()
 

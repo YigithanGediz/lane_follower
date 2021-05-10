@@ -153,15 +153,15 @@ class BinaryToFit:
 
             plotx = np.int32(plotx)
             cv2.polylines(draw_img, [np.asarray([plotx, ploty]).T], False, (0, 0, 255), thickness=3)
-            cv2.circle(draw_img, (110, 500), radius=5, color=(255, 255, 0))
+            cv2.circle(draw_img, (103, 500), radius=5, color=(255, 255, 0))
             cv2.imshow(self.camera_type, draw_img)
-            cv2.waitKey(500)
+            cv2.waitKey(1)
 
 
 if __name__ == '__main__':
-    fitter = BinaryToFit(show_results=True, camera_type='right')
+    fitter = BinaryToFit(show_results=True, camera_type='left')
 
-    for i in range(133, 152):
+    for i in range(0, 1000):
         start = time.time()
         image = cv2.imread(f"./predictions/camera{i}.png")
         image = image[:, :, 0] / 255

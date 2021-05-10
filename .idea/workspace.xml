@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/BinaryToFit.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/BinaryToFit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ControlPublisherNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ControlPublisherNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/PIDControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/PIDControl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ProcessLaneNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ProcessLaneNode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +116,7 @@
       <updated>1620586153910</updated>
       <workItem from="1620586155098" duration="668000" />
       <workItem from="1620587012905" duration="2229000" />
+      <workItem from="1620676424964" duration="189000" />
     </task>
     <task id="LOCAL-00001" summary="Added pid">
       <created>1620663330052</created>
@@ -137,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620665751069</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added self-driving functionality to simulation">
+      <created>1620668102785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620668102785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +171,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lane_follower$PIDControl.coverage" NAME="PIDControl Coverage Results" MODIFIED="1620665251935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector" />
-    <SUITE FILE_PATH="coverage/lane_follower$BinaryToFit.coverage" NAME="BinaryToFit Coverage Results" MODIFIED="1620665500719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector" />
+    <SUITE FILE_PATH="coverage/lane_follower$BinaryToFit.coverage" NAME="BinaryToFit Coverage Results" MODIFIED="1620674729006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector" />
   </component>
 </project>

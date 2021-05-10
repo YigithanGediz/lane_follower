@@ -6,18 +6,21 @@ import numpy as np
 
 
 class PIDControl:
-    def __init__(self, send_steering_callback, default_y=110):
+    def __init__(self, send_steering_callback, default_y=103):
         self.y = 0.0
         self.send_steering_callback = send_steering_callback
         self.default_y = default_y
 
-        self.prev_cte = self._getError()
+        self.prev_cte = 0
         self.int_cte = 0
-        self.tau_p, self.tau_d, self.tau_i = 0.2, 3.0, 0.002
+        self.tau_p, self.tau_d, self.tau_i = 0.0001, 0.0002, 0.000000
 
 
     def _getError(self):
-        return 1/(self.default_y - self.y)
+        err = self.default_y - self.y
+        if err > 50:
+            return self.prev_cte
+        return self.default_y - self.y
 
     def _move(self, steering):
         self.send_steering_callback(steering)
