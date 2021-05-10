@@ -975,6 +975,8 @@ stddef.h
 -
 stdint.h
 -
+rosidl_generator_c/string.h
+rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/string.h
 rosidl_generator_c/primitives_sequence.h
 rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence.h
 

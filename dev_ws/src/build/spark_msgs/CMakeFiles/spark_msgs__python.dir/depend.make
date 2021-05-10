@@ -934,6 +934,8 @@ CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_pose_s.c.o
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
+CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /opt/ros/dashing/include/rosidl_generator_c/string.h
+CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /opt/ros/dashing/include/rosidl_generator_c/string_functions.h
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /usr/include/python3.6m/Python.h
 CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c.o: /usr/include/python3.6m/abstract.h

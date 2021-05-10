@@ -311,6 +311,8 @@ CMakeFiles/spark_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fast
  /opt/ros/dashing/include/rosidl_generator_c/message_type_support_struct.h
  /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
  /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
+ /opt/ros/dashing/include/rosidl_generator_c/string.h
+ /opt/ros/dashing/include/rosidl_generator_c/string_functions.h
  /opt/ros/dashing/include/rosidl_generator_c/u16string.h
  /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
  /opt/ros/dashing/include/rosidl_typesupport_fastrtps_c/identifier.h

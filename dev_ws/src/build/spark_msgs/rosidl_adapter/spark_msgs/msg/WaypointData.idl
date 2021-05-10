@@ -6,7 +6,7 @@
 module spark_msgs {
   module msg {
     struct WaypointData {
-      boolean is_inf;
+      string name;
 
       sequence<double> x;
 

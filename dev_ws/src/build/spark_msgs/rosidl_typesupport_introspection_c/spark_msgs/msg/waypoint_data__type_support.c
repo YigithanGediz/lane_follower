@@ -12,6 +12,8 @@
 
 
 // Include directives for member types
+// Member `name`
+#include "rosidl_generator_c/string_functions.h"
 // Member `x`
 // Member `y`
 #include "rosidl_generator_c/primitives_sequence_functions.h"
@@ -23,14 +25,14 @@ extern "C"
 
 static rosidl_typesupport_introspection_c__MessageMember WaypointData__rosidl_typesupport_introspection_c__WaypointData_message_member_array[3] = {
   {
-    "is_inf",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    "name",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(spark_msgs__msg__WaypointData, is_inf),  // bytes offset in struct
+    offsetof(spark_msgs__msg__WaypointData, name),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

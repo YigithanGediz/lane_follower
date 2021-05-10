@@ -28,7 +28,8 @@ setup(
             'left_waypoints = lane_detector.LeftWaypointsNode:main',
             'show_left_waypoints = lane_detector.ShowLeftWaypointsNode:main',
             "right_waypoints = lane_detector.RightWaypointsNode:main",
-            "show_right_waypoints = lane_detector.ShowRightWaypointsNode:main"
+            "show_right_waypoints = lane_detector.ShowRightWaypointsNode:main",
+            "merge = lane_detector.MergerNode:main"
         ],
     },
 )

@@ -341,6 +341,10 @@ rosidl_generator_c/primitives_sequence.h
 /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_fastrtps_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence.h
 rosidl_generator_c/primitives_sequence_functions.h
 /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_fastrtps_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence_functions.h
+rosidl_generator_c/string.h
+/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_fastrtps_c/spark_msgs/msg/rosidl_generator_c/string.h
+rosidl_generator_c/string_functions.h
+/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_fastrtps_c/spark_msgs/msg/rosidl_generator_c/string_functions.h
 
 /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_fastrtps_c/spark_msgs/msg/waypoints__type_support_c.cpp
 spark_msgs/msg/waypoints__rosidl_typesupport_fastrtps_c.h
@@ -833,6 +837,8 @@ stddef.h
 -
 stdint.h
 -
+rosidl_generator_c/string.h
+rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/string.h
 rosidl_generator_c/primitives_sequence.h
 rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence.h
 

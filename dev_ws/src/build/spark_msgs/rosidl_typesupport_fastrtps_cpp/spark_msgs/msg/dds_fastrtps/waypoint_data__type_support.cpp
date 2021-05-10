@@ -32,8 +32,8 @@ cdr_serialize(
   const spark_msgs::msg::WaypointData & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: is_inf
-  cdr << (ros_message.is_inf ? true : false);
+  // Member: name
+  cdr << ros_message.name;
   // Member: x
   {
     cdr << ros_message.x;
@@ -51,12 +51,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   spark_msgs::msg::WaypointData & ros_message)
 {
-  // Member: is_inf
-  {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message.is_inf = tmp ? true : false;
-  }
+  // Member: name
+  cdr >> ros_message.name;
 
   // Member: x
   {
@@ -84,12 +80,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: is_inf
-  {
-    size_t item_size = sizeof(ros_message.is_inf);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // Member: name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.name.size() + 1);
   // Member: x
   {
     size_t array_size = ros_message.x.size();
@@ -129,11 +123,16 @@ max_serialized_size_WaypointData(
   (void)full_bounded;
 
 
-  // Member: is_inf
+  // Member: name
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   // Member: x

@@ -47,24 +47,24 @@ struct WaypointData_
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->is_inf = false;
+      this->name = "";
     }
   }
 
   explicit WaypointData_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
+  : name(_alloc)
   {
-    (void)_alloc;
     if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
       rosidl_generator_cpp::MessageInitialization::ZERO == _init)
     {
-      this->is_inf = false;
+      this->name = "";
     }
   }
 
   // field types and members
-  using _is_inf_type =
-    bool;
-  _is_inf_type is_inf;
+  using _name_type =
+    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+  _name_type name;
   using _x_type =
     std::vector<double, typename ContainerAllocator::template rebind<double>::other>;
   _x_type x;
@@ -73,10 +73,10 @@ struct WaypointData_
   _y_type y;
 
   // setters for named parameter idiom
-  Type & set__is_inf(
-    const bool & _arg)
+  Type & set__name(
+    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
   {
-    this->is_inf = _arg;
+    this->name = _arg;
     return *this;
   }
   Type & set__x(
@@ -134,7 +134,7 @@ struct WaypointData_
   // comparison operators
   bool operator==(const WaypointData_ & other) const
   {
-    if (this->is_inf != other.is_inf) {
+    if (this->name != other.name) {
       return false;
     }
     if (this->x != other.x) {

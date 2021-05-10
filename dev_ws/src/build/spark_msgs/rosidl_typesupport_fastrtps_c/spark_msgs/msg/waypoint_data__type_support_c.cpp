@@ -36,6 +36,8 @@ extern "C"
 
 #include "rosidl_generator_c/primitives_sequence.h"  // x, y
 #include "rosidl_generator_c/primitives_sequence_functions.h"  // x, y
+#include "rosidl_generator_c/string.h"  // name
+#include "rosidl_generator_c/string_functions.h"  // name
 
 // forward declare type support functions
 
@@ -51,9 +53,18 @@ static bool _WaypointData__cdr_serialize(
     return false;
   }
   const _WaypointData__ros_msg_type * ros_message = static_cast<const _WaypointData__ros_msg_type *>(untyped_ros_message);
-  // Field name: is_inf
+  // Field name: name
   {
-    cdr << (ros_message->is_inf ? true : false);
+    const rosidl_generator_c__String * str = &ros_message->name;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   // Field name: x
@@ -84,11 +95,20 @@ static bool _WaypointData__cdr_deserialize(
     return false;
   }
   _WaypointData__ros_msg_type * ros_message = static_cast<_WaypointData__ros_msg_type *>(untyped_ros_message);
-  // Field name: is_inf
+  // Field name: name
   {
-    uint8_t tmp;
+    std::string tmp;
     cdr >> tmp;
-    ros_message->is_inf = tmp ? true : false;
+    if (!ros_message->name.data) {
+      rosidl_generator_c__String__init(&ros_message->name);
+    }
+    bool succeeded = rosidl_generator_c__String__assign(
+      &ros_message->name,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'name'\n");
+      return false;
+    }
   }
 
   // Field name: x
@@ -138,12 +158,10 @@ size_t get_serialized_size_spark_msgs__msg__WaypointData(
   (void)padding;
   (void)wchar_size;
 
-  // field.name is_inf
-  {
-    size_t item_size = sizeof(ros_message->is_inf);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name name
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->name.size + 1);
   // field.name x
   {
     size_t array_size = ros_message->x.size;
@@ -190,11 +208,16 @@ size_t max_serialized_size_spark_msgs__msg__WaypointData(
   (void)wchar_size;
   (void)full_bounded;
 
-  // member: is_inf
+  // member: name
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    full_bounded = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
   // member: x
   {

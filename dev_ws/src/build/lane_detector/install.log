@@ -46,6 +46,7 @@
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector-0.0.0-py3.6.egg-info/entry_points.txt
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/left_lane_detection
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/left_waypoints
+/home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/merge
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/process_lanes
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/right_lane_detection
 /home/yigithan/lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/right_waypoints

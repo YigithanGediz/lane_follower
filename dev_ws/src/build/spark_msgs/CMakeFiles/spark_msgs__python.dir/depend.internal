@@ -935,6 +935,8 @@ CMakeFiles/spark_msgs__python.dir/rosidl_generator_py/spark_msgs/msg/_waypoint_d
  /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_generator_py/spark_msgs/msg/_waypoint_data_s.c
  /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
  /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
+ /opt/ros/dashing/include/rosidl_generator_c/string.h
+ /opt/ros/dashing/include/rosidl_generator_c/string_functions.h
  /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
  /usr/include/python3.6m/Python.h
  /usr/include/python3.6m/abstract.h

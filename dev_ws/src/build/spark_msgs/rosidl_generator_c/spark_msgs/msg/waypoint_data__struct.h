@@ -18,6 +18,8 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
+// Member 'name'
+#include "rosidl_generator_c/string.h"
 // Member 'x'
 // Member 'y'
 #include "rosidl_generator_c/primitives_sequence.h"
@@ -25,7 +27,7 @@ extern "C"
 // Struct defined in msg/WaypointData in the package spark_msgs.
 typedef struct spark_msgs__msg__WaypointData
 {
-  bool is_inf;
+  rosidl_generator_c__String name;
   rosidl_generator_c__double__Sequence x;
   rosidl_generator_c__double__Sequence y;
 } spark_msgs__msg__WaypointData;

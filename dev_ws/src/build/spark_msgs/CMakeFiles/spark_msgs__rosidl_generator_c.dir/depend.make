@@ -125,6 +125,8 @@ CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
+CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/string.h
+CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/string_functions.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: rosidl_generator_c/spark_msgs/msg/rosidl_generator_c__visibility_control.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.c.o: rosidl_generator_c/spark_msgs/msg/waypoint_data__functions.h

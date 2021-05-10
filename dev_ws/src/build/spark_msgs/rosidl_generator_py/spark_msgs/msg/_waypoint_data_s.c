@@ -16,6 +16,9 @@
 #include "spark_msgs/msg/waypoint_data__struct.h"
 #include "spark_msgs/msg/waypoint_data__functions.h"
 
+#include "rosidl_generator_c/string.h"
+#include "rosidl_generator_c/string_functions.h"
+
 #include "rosidl_generator_c/primitives_sequence.h"
 #include "rosidl_generator_c/primitives_sequence_functions.h"
 
@@ -55,13 +58,19 @@ bool spark_msgs__msg__waypoint_data__convert_from_py(PyObject * _pymsg, void * _
         full_classname_dest, 42) == 0);
   }
   spark_msgs__msg__WaypointData * ros_message = _ros_message;
-  {  // is_inf
-    PyObject * field = PyObject_GetAttrString(_pymsg, "is_inf");
+  {  // name
+    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
     if (!field) {
       return false;
     }
-    assert(PyBool_Check(field));
-    ros_message->is_inf = (Py_True == field);
+    assert(PyUnicode_Check(field));
+    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
+    if (!encoded_field) {
+      Py_DECREF(field);
+      return false;
+    }
+    rosidl_generator_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
+    Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
   {  // x
@@ -160,11 +169,17 @@ PyObject * spark_msgs__msg__waypoint_data__convert_to_py(void * raw_ros_message)
     }
   }
   spark_msgs__msg__WaypointData * ros_message = (spark_msgs__msg__WaypointData *)raw_ros_message;
-  {  // is_inf
+  {  // name
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->is_inf ? 1 : 0);
+    field = PyUnicode_DecodeUTF8(
+      ros_message->name.data,
+      strlen(ros_message->name.data),
+      "strict");
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "is_inf", field);
+      int rc = PyObject_SetAttrString(_pymessage, "name", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

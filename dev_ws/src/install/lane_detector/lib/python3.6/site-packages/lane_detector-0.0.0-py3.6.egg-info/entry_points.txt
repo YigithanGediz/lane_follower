@@ -1,6 +1,7 @@
 [console_scripts]
 left_lane_detection = lane_detector.LeftLaneDetectorNode:main
 left_waypoints = lane_detector.LeftWaypointsNode:main
+merge = lane_detector.MergerNode:main
 process_lanes = lane_detector.ProcessLaneNode:main
 right_lane_detection = lane_detector.RightLaneDetectorNode:main
 right_waypoints = lane_detector.RightWaypointsNode:main

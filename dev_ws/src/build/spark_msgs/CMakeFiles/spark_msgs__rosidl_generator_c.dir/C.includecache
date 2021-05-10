@@ -179,6 +179,8 @@ stdlib.h
 -
 string.h
 -
+rosidl_generator_c/string_functions.h
+/home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/string_functions.h
 rosidl_generator_c/primitives_sequence_functions.h
 /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence_functions.h
 
@@ -553,6 +555,8 @@ stddef.h
 -
 stdint.h
 -
+rosidl_generator_c/string.h
+rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/string.h
 rosidl_generator_c/primitives_sequence.h
 rosidl_generator_c/spark_msgs/msg/rosidl_generator_c/primitives_sequence.h
 

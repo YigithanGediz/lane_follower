@@ -47,13 +47,13 @@ class LeftWaypointsNode(Node):
 
             # Coefficients of the line found and whether it is vertical or rotated
             data2 = LaneCoeffs()
-            data2.name = "Rotated"
+            data2.name = "Rotated Left"
             data2.slope = line_coeffs[0]
             data2.bias = line_coeffs[1]
 
             # Waypoint data
             data = WaypointData()
-            data.is_inf = False
+            data.name = "left"
             data.x = list(x_space)
             data.y = list(y_space)
 
@@ -64,11 +64,11 @@ class LeftWaypointsNode(Node):
             data = WaypointData()
             data2 = LaneCoeffs()
 
-            data.is_inf = True
+            data.name = "left"
             data.x = [x_max/2]*n_samples
             data.y = list(np.linspace(y_max-100, y_max-100-n_samples-1, n_samples, dtype="float64"))
 
-            data2.name = "Vertical"
+            data2.name = "Vertical Left"
             data2.slope = 999999999999999.
             data2.bias = x_max/2
 

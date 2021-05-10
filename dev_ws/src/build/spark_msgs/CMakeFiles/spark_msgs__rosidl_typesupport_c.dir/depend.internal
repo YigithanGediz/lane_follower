@@ -148,6 +148,7 @@ CMakeFiles/spark_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/spark_msgs/
  /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/rosidl_typesupport_c/spark_msgs/msg/waypoint_data__type_support.cpp
  /opt/ros/dashing/include/rosidl_generator_c/message_type_support_struct.h
  /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
+ /opt/ros/dashing/include/rosidl_generator_c/string.h
  /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
  /opt/ros/dashing/include/rosidl_typesupport_c/visibility_control.h
  /opt/ros/dashing/include/rosidl_typesupport_interface/macros.h

@@ -10,6 +10,8 @@
 
 
 // Include directives for member types
+// Member `name`
+#include "rosidl_generator_c/string_functions.h"
 // Member `x`
 // Member `y`
 #include "rosidl_generator_c/primitives_sequence_functions.h"
@@ -20,7 +22,11 @@ spark_msgs__msg__WaypointData__init(spark_msgs__msg__WaypointData * msg)
   if (!msg) {
     return false;
   }
-  // is_inf
+  // name
+  if (!rosidl_generator_c__String__init(&msg->name)) {
+    spark_msgs__msg__WaypointData__fini(msg);
+    return false;
+  }
   // x
   if (!rosidl_generator_c__double__Sequence__init(&msg->x, 0)) {
     spark_msgs__msg__WaypointData__fini(msg);
@@ -40,7 +46,8 @@ spark_msgs__msg__WaypointData__fini(spark_msgs__msg__WaypointData * msg)
   if (!msg) {
     return;
   }
-  // is_inf
+  // name
+  rosidl_generator_c__String__fini(&msg->name);
   // x
   rosidl_generator_c__double__Sequence__fini(&msg->x);
   // y
