@@ -36,8 +36,7 @@ CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/
 
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence.h
-CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/string.h
-CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/string_functions.h
+CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/primitives_sequence_functions.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: /opt/ros/dashing/include/rosidl_generator_c/visibility_control.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.h
 CMakeFiles/spark_msgs__rosidl_generator_c.dir/rosidl_generator_c/spark_msgs/msg/lane_coeffs__functions.c.o: rosidl_generator_c/spark_msgs/msg/lane_coeffs__struct.h

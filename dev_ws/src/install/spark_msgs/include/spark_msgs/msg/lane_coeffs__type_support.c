@@ -12,54 +12,24 @@
 
 
 // Include directives for member types
-// Member `name`
-#include "rosidl_generator_c/string_functions.h"
+// Member `coeffs`
+#include "rosidl_generator_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
-static rosidl_typesupport_introspection_c__MessageMember LaneCoeffs__rosidl_typesupport_introspection_c__LaneCoeffs_message_member_array[3] = {
+static rosidl_typesupport_introspection_c__MessageMember LaneCoeffs__rosidl_typesupport_introspection_c__LaneCoeffs_message_member_array[1] = {
   {
-    "name",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(spark_msgs__msg__LaneCoeffs, name),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "slope",  // name
+    "coeffs",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(spark_msgs__msg__LaneCoeffs, slope),  // bytes offset in struct
-    NULL,  // default value
-    NULL,  // size() function pointer
-    NULL,  // get_const(index) function pointer
-    NULL,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "bias",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(spark_msgs__msg__LaneCoeffs, bias),  // bytes offset in struct
+    offsetof(spark_msgs__msg__LaneCoeffs, coeffs),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -71,7 +41,7 @@ static rosidl_typesupport_introspection_c__MessageMember LaneCoeffs__rosidl_type
 static const rosidl_typesupport_introspection_c__MessageMembers LaneCoeffs__rosidl_typesupport_introspection_c__LaneCoeffs_message_members = {
   "spark_msgs__msg",  // message namespace
   "LaneCoeffs",  // message name
-  3,  // number of fields
+  1,  // number of fields
   sizeof(spark_msgs__msg__LaneCoeffs),
   LaneCoeffs__rosidl_typesupport_introspection_c__LaneCoeffs_message_member_array  // message members
 };

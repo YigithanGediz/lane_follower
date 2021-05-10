@@ -85,6 +85,7 @@ class LeftWaypointsNode(Node):
         if abs(rot_slope) >= vertical_slope_thresh:
             rot_slope = np.inf
 
+
         return (rot_slope, rot_bias)
 
 

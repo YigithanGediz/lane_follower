@@ -18,15 +18,13 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'name'
-#include "rosidl_generator_c/string.h"
+// Member 'coeffs'
+#include "rosidl_generator_c/primitives_sequence.h"
 
 // Struct defined in msg/LaneCoeffs in the package spark_msgs.
 typedef struct spark_msgs__msg__LaneCoeffs
 {
-  rosidl_generator_c__String name;
-  float slope;
-  float bias;
+  rosidl_generator_c__float__Sequence coeffs;
 } spark_msgs__msg__LaneCoeffs;
 
 // Struct for a sequence of spark_msgs__msg__LaneCoeffs.

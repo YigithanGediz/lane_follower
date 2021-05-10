@@ -32,12 +32,10 @@ cdr_serialize(
   const spark_msgs::msg::LaneCoeffs & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: name
-  cdr << ros_message.name;
-  // Member: slope
-  cdr << ros_message.slope;
-  // Member: bias
-  cdr << ros_message.bias;
+  // Member: coeffs
+  {
+    cdr << ros_message.coeffs;
+  }
   return true;
 }
 
@@ -47,14 +45,10 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   spark_msgs::msg::LaneCoeffs & ros_message)
 {
-  // Member: name
-  cdr >> ros_message.name;
-
-  // Member: slope
-  cdr >> ros_message.slope;
-
-  // Member: bias
-  cdr >> ros_message.bias;
+  // Member: coeffs
+  {
+    cdr >> ros_message.coeffs;
+  }
 
   return true;
 }
@@ -72,20 +66,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: name
-  current_alignment += padding +
-    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.name.size() + 1);
-  // Member: slope
+  // Member: coeffs
   {
-    size_t item_size = sizeof(ros_message.slope);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: bias
-  {
-    size_t item_size = sizeof(ros_message.bias);
-    current_alignment += item_size +
+    size_t array_size = ros_message.coeffs.size();
+
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.coeffs[0]);
+    current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
@@ -107,29 +95,12 @@ max_serialized_size_LaneCoeffs(
   (void)full_bounded;
 
 
-  // Member: name
+  // Member: coeffs
   {
-    size_t array_size = 1;
-
+    size_t array_size = 0;
     full_bounded = false;
-    for (size_t index = 0; index < array_size; ++index) {
-      current_alignment += padding +
-        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-        1;
-    }
-  }
-
-  // Member: slope
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: bias
-  {
-    size_t array_size = 1;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));

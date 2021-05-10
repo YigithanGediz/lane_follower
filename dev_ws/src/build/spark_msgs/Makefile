@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yigithan/lane_follower/dev_ws/src/spark_msgs
+CMAKE_SOURCE_DIR = /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/spark_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs
+CMAKE_BINARY_DIR = /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/spark_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/spark_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

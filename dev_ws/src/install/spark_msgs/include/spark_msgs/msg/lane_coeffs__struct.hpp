@@ -44,55 +44,25 @@ struct LaneCoeffs_
 
   explicit LaneCoeffs_(rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
   {
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->name = "";
-      this->slope = 0.0f;
-      this->bias = 0.0f;
-    }
+    (void)_init;
   }
 
   explicit LaneCoeffs_(const ContainerAllocator & _alloc, rosidl_generator_cpp::MessageInitialization _init = rosidl_generator_cpp::MessageInitialization::ALL)
-  : name(_alloc)
   {
-    if (rosidl_generator_cpp::MessageInitialization::ALL == _init ||
-      rosidl_generator_cpp::MessageInitialization::ZERO == _init)
-    {
-      this->name = "";
-      this->slope = 0.0f;
-      this->bias = 0.0f;
-    }
+    (void)_init;
+    (void)_alloc;
   }
 
   // field types and members
-  using _name_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
-  _name_type name;
-  using _slope_type =
-    float;
-  _slope_type slope;
-  using _bias_type =
-    float;
-  _bias_type bias;
+  using _coeffs_type =
+    std::vector<float, typename ContainerAllocator::template rebind<float>::other>;
+  _coeffs_type coeffs;
 
   // setters for named parameter idiom
-  Type & set__name(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+  Type & set__coeffs(
+    const std::vector<float, typename ContainerAllocator::template rebind<float>::other> & _arg)
   {
-    this->name = _arg;
-    return *this;
-  }
-  Type & set__slope(
-    const float & _arg)
-  {
-    this->slope = _arg;
-    return *this;
-  }
-  Type & set__bias(
-    const float & _arg)
-  {
-    this->bias = _arg;
+    this->coeffs = _arg;
     return *this;
   }
 
@@ -138,13 +108,7 @@ struct LaneCoeffs_
   // comparison operators
   bool operator==(const LaneCoeffs_ & other) const
   {
-    if (this->name != other.name) {
-      return false;
-    }
-    if (this->slope != other.slope) {
-      return false;
-    }
-    if (this->bias != other.bias) {
+    if (this->coeffs != other.coeffs) {
       return false;
     }
     return true;

@@ -6,11 +6,7 @@
 module spark_msgs {
   module msg {
     struct LaneCoeffs {
-      string name;
-
-      float slope;
-
-      float bias;
+      sequence<float> coeffs;
     };
   };
 };

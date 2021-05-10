@@ -1,0 +1,11 @@
+-- Found ros_environment: 2.3.0 (/opt/ros/dashing/share/ros_environment/cmake)
+CMake Error at CMakeLists.txt:25 (if):
+  if given arguments:
+
+    "EQUAL" "1"
+
+  Unknown arguments specified
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/lgsvl_msgs/CMakeFiles/CMakeOutput.log".

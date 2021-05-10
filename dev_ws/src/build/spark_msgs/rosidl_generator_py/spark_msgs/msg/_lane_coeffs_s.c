@@ -16,8 +16,8 @@
 #include "spark_msgs/msg/lane_coeffs__struct.h"
 #include "spark_msgs/msg/lane_coeffs__functions.h"
 
-#include "rosidl_generator_c/string.h"
-#include "rosidl_generator_c/string_functions.h"
+#include "rosidl_generator_c/primitives_sequence.h"
+#include "rosidl_generator_c/primitives_sequence_functions.h"
 
 
 ROSIDL_GENERATOR_C_EXPORT
@@ -55,37 +55,41 @@ bool spark_msgs__msg__lane_coeffs__convert_from_py(PyObject * _pymsg, void * _ro
         full_classname_dest, 38) == 0);
   }
   spark_msgs__msg__LaneCoeffs * ros_message = _ros_message;
-  {  // name
-    PyObject * field = PyObject_GetAttrString(_pymsg, "name");
+  {  // coeffs
+    PyObject * field = PyObject_GetAttrString(_pymsg, "coeffs");
     if (!field) {
       return false;
     }
-    assert(PyUnicode_Check(field));
-    PyObject * encoded_field = PyUnicode_AsUTF8String(field);
-    if (!encoded_field) {
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'coeffs'");
+    if (!seq_field) {
       Py_DECREF(field);
       return false;
     }
-    rosidl_generator_c__String__assign(&ros_message->name, PyBytes_AS_STRING(encoded_field));
-    Py_DECREF(encoded_field);
-    Py_DECREF(field);
-  }
-  {  // slope
-    PyObject * field = PyObject_GetAttrString(_pymsg, "slope");
-    if (!field) {
+    Py_ssize_t size = PySequence_Size(field);
+    if (-1 == size) {
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->slope = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // bias
-    PyObject * field = PyObject_GetAttrString(_pymsg, "bias");
-    if (!field) {
+    if (!rosidl_generator_c__float__Sequence__init(&(ros_message->coeffs), size)) {
+      PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
+      Py_DECREF(seq_field);
+      Py_DECREF(field);
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->bias = (float)PyFloat_AS_DOUBLE(field);
+    float * dest = ros_message->coeffs.data;
+    for (Py_ssize_t i = 0; i < size; ++i) {
+      PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
+      if (!item) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      assert(PyFloat_Check(item));
+      float tmp = (float)PyFloat_AS_DOUBLE(item);
+      memcpy(&dest[i], &tmp, sizeof(float));
+    }
+    Py_DECREF(seq_field);
     Py_DECREF(field);
   }
 
@@ -110,44 +114,62 @@ PyObject * spark_msgs__msg__lane_coeffs__convert_to_py(void * raw_ros_message)
     }
   }
   spark_msgs__msg__LaneCoeffs * ros_message = (spark_msgs__msg__LaneCoeffs *)raw_ros_message;
-  {  // name
+  {  // coeffs
     PyObject * field = NULL;
-    field = PyUnicode_DecodeUTF8(
-      ros_message->name.data,
-      strlen(ros_message->name.data),
-      "strict");
+    field = PyObject_GetAttrString(_pymessage, "coeffs");
     if (!field) {
       return NULL;
     }
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "name", field);
+    assert(field->ob_type != NULL);
+    assert(field->ob_type->tp_name != NULL);
+    assert(strcmp(field->ob_type->tp_name, "array.array") == 0);
+    // ensure that itemsize matches the sizeof of the ROS message field
+    PyObject * itemsize_attr = PyObject_GetAttrString(field, "itemsize");
+    assert(itemsize_attr != NULL);
+    size_t itemsize = PyLong_AsSize_t(itemsize_attr);
+    Py_DECREF(itemsize_attr);
+    if (itemsize != sizeof(float)) {
+      PyErr_SetString(PyExc_RuntimeError, "itemsize doesn't match expectation");
       Py_DECREF(field);
-      if (rc) {
+      return NULL;
+    }
+    // clear the array, poor approach to remove potential default values
+    Py_ssize_t length = PyObject_Length(field);
+    if (-1 == length) {
+      Py_DECREF(field);
+      return NULL;
+    }
+    if (length > 0) {
+      PyObject * pop = PyObject_GetAttrString(field, "pop");
+      assert(pop != NULL);
+      for (Py_ssize_t i = 0; i < length; ++i) {
+        PyObject * ret = PyObject_CallFunctionObjArgs(pop, NULL);
+        if (!ret) {
+          Py_DECREF(pop);
+          Py_DECREF(field);
+          return NULL;
+        }
+        Py_DECREF(ret);
+      }
+      Py_DECREF(pop);
+    }
+    if (ros_message->coeffs.size > 0) {
+      // populating the array.array using the frombytes method
+      PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
+      assert(frombytes != NULL);
+      float * src = &(ros_message->coeffs.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->coeffs.size * sizeof(float));
+      assert(data != NULL);
+      PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
+      Py_DECREF(data);
+      Py_DECREF(frombytes);
+      if (!ret) {
+        Py_DECREF(field);
         return NULL;
       }
+      Py_DECREF(ret);
     }
-  }
-  {  // slope
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->slope);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "slope", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // bias
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->bias);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "bias", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
+    Py_DECREF(field);
   }
 
   // ownership of _pymessage is transferred to the caller

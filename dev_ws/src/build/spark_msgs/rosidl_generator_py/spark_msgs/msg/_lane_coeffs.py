@@ -5,6 +5,9 @@
 
 # Import statements for member types
 
+# Member 'coeffs'
+import array  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -53,30 +56,22 @@ class LaneCoeffs(metaclass=Metaclass_LaneCoeffs):
     """Message class 'LaneCoeffs'."""
 
     __slots__ = [
-        '_name',
-        '_slope',
-        '_bias',
+        '_coeffs',
     ]
 
     _fields_and_field_types = {
-        'name': 'string',
-        'slope': 'float',
-        'bias': 'float',
+        'coeffs': 'sequence<float>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedString(),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.name = kwargs.get('name', str())
-        self.slope = kwargs.get('slope', float())
-        self.bias = kwargs.get('bias', float())
+        self.coeffs = array.array('f', kwargs.get('coeffs', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -107,11 +102,7 @@ class LaneCoeffs(metaclass=Metaclass_LaneCoeffs):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.name != other.name:
-            return False
-        if self.slope != other.slope:
-            return False
-        if self.bias != other.bias:
+        if self.coeffs != other.coeffs:
             return False
         return True
 
@@ -121,40 +112,29 @@ class LaneCoeffs(metaclass=Metaclass_LaneCoeffs):
         return copy(cls._fields_and_field_types)
 
     @property
-    def name(self):
-        """Message field 'name'."""
-        return self._name
+    def coeffs(self):
+        """Message field 'coeffs'."""
+        return self._coeffs
 
-    @name.setter
-    def name(self, value):
+    @coeffs.setter
+    def coeffs(self, value):
+        if isinstance(value, array.array):
+            assert value.typecode == 'f', \
+                "The 'coeffs' array.array() must have the type code of 'f'"
+            self._coeffs = value
+            return
         if __debug__:
+            from collections.abc import Sequence
+            from collections.abc import Set
+            from collections import UserList
+            from collections import UserString
             assert \
-                isinstance(value, str), \
-                "The 'name' field must be of type 'str'"
-        self._name = value
-
-    @property
-    def slope(self):
-        """Message field 'slope'."""
-        return self._slope
-
-    @slope.setter
-    def slope(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'slope' field must be of type 'float'"
-        self._slope = value
-
-    @property
-    def bias(self):
-        """Message field 'bias'."""
-        return self._bias
-
-    @bias.setter
-    def bias(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'bias' field must be of type 'float'"
-        self._bias = value
+                ((isinstance(value, Sequence) or
+                  isinstance(value, Set) or
+                  isinstance(value, UserList)) and
+                 not isinstance(value, str) and
+                 not isinstance(value, UserString) and
+                 all(isinstance(v, float) for v in value) and
+                 True), \
+                "The 'coeffs' field must be a set or sequence and each value of type 'float'"
+        self._coeffs = array.array('f', value)

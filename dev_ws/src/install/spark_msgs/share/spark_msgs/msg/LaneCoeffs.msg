@@ -1,3 +1,1 @@
-string name
-float32 slope
-float32 bias
+float32[] coeffs

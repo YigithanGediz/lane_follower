@@ -6,6 +6,7 @@ from spark_msgs.msg import LaneWaypoints,WaypointData
 class MergerNode(Node):
     def __init__(self):
         super().__init__("Merger")
+        # Merge Everything into one topic
 
         self.publisher = self.create_publisher(
             LaneWaypoints,

@@ -25,58 +25,55 @@ namespace msg
 namespace rosidl_typesupport_introspection_cpp
 {
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember LaneCoeffs_message_member_array[3] = {
+size_t size_function__LaneCoeffs__coeffs(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return member->size();
+}
+
+const void * get_const_function__LaneCoeffs__coeffs(const void * untyped_member, size_t index)
+{
+  const auto & member =
+    *reinterpret_cast<const std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void * get_function__LaneCoeffs__coeffs(void * untyped_member, size_t index)
+{
+  auto & member =
+    *reinterpret_cast<std::vector<float> *>(untyped_member);
+  return &member[index];
+}
+
+void resize_function__LaneCoeffs__coeffs(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<float> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember LaneCoeffs_message_member_array[1] = {
   {
-    "name",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(spark_msgs::msg::LaneCoeffs, name),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "slope",  // name
+    "coeffs",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
-    false,  // is array
+    true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(spark_msgs::msg::LaneCoeffs, slope),  // bytes offset in struct
+    offsetof(spark_msgs::msg::LaneCoeffs, coeffs),  // bytes offset in struct
     nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
-  },
-  {
-    "bias",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    NULL,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(spark_msgs::msg::LaneCoeffs, bias),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    NULL  // resize(index) function pointer
+    size_function__LaneCoeffs__coeffs,  // size() function pointer
+    get_const_function__LaneCoeffs__coeffs,  // get_const(index) function pointer
+    get_function__LaneCoeffs__coeffs,  // get(index) function pointer
+    resize_function__LaneCoeffs__coeffs  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers LaneCoeffs_message_members = {
   "spark_msgs::msg",  // message namespace
   "LaneCoeffs",  // message name
-  3,  // number of fields
+  1,  // number of fields
   sizeof(spark_msgs::msg::LaneCoeffs),
   LaneCoeffs_message_member_array  // message members
 };

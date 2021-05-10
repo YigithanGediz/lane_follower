@@ -1,8 +1,8 @@
-# Install script for directory: /home/yigithan/lane_follower/dev_ws/src/build/spark_msgs/spark_msgs__py
+# Install script for directory: /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/build/spark_msgs/spark_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yigithan/lane_follower/dev_ws/src/install/spark_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/spark_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

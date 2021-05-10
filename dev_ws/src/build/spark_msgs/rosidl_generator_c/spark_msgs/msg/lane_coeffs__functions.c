@@ -10,8 +10,8 @@
 
 
 // Include directives for member types
-// Member `name`
-#include "rosidl_generator_c/string_functions.h"
+// Member `coeffs`
+#include "rosidl_generator_c/primitives_sequence_functions.h"
 
 bool
 spark_msgs__msg__LaneCoeffs__init(spark_msgs__msg__LaneCoeffs * msg)
@@ -19,13 +19,11 @@ spark_msgs__msg__LaneCoeffs__init(spark_msgs__msg__LaneCoeffs * msg)
   if (!msg) {
     return false;
   }
-  // name
-  if (!rosidl_generator_c__String__init(&msg->name)) {
+  // coeffs
+  if (!rosidl_generator_c__float__Sequence__init(&msg->coeffs, 0)) {
     spark_msgs__msg__LaneCoeffs__fini(msg);
     return false;
   }
-  // slope
-  // bias
   return true;
 }
 
@@ -35,10 +33,8 @@ spark_msgs__msg__LaneCoeffs__fini(spark_msgs__msg__LaneCoeffs * msg)
   if (!msg) {
     return;
   }
-  // name
-  rosidl_generator_c__String__fini(&msg->name);
-  // slope
-  // bias
+  // coeffs
+  rosidl_generator_c__float__Sequence__fini(&msg->coeffs);
 }
 
 spark_msgs__msg__LaneCoeffs *
