@@ -53,14 +53,15 @@ def generate_launch_description():
         output="screen"
     )
 
+    control_publisher_node = Node(
+        package="lane_detector",
+        node_executable="publish_control",
+        output="screen"
+    )
+
     ld.add_action(process_lane_node)
     ld.add_action(left_lane_detection_node)
-    ld.add_action(right_lane_detection_node)
-    ld.add_action(left_waypoints_node)
-    ld.add_action(show_left_waypoints_node)
-    ld.add_action(right_waypoints_node)
-    ld.add_action(show_right_waypoints_node)
-    ld.add_action(merger_node)
+    ld.add_action(control_publisher_node)
 
     return ld
 

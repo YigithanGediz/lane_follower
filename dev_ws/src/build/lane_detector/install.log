@@ -5,6 +5,7 @@
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ControlPublisherNode.py
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LeftLaneDetectorNode.py
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__init__.py
+/home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/VelocityControllerNode.py
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/cluster_loss3.py
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/LidarRawtoOpen3D.py
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/ShowRightWaypointsNode.py
@@ -26,6 +27,7 @@
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/ControlPublisherNode.cpython-36.pyc
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/LeftLaneDetectorNode.cpython-36.pyc
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/__init__.cpython-36.pyc
+/home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/VelocityControllerNode.cpython-36.pyc
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/cluster_loss3.cpython-36.pyc
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/LidarRawtoOpen3D.cpython-36.pyc
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/python3.6/site-packages/lane_detector/__pycache__/ShowRightWaypointsNode.cpython-36.pyc
@@ -53,6 +55,7 @@
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/left_lane_detection
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/left_waypoints
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/merge
+/home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/move_with_same_velocity
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/process_lanes
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/publish_control
 /home/yigithan/Desktop/PID_lane_follower/dev_ws/src/install/lane_detector/lib/lane_detector/right_lane_detection

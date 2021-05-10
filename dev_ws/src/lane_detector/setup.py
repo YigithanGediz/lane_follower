@@ -30,7 +30,8 @@ setup(
             "right_waypoints = lane_detector.RightWaypointsNode:main",
             "show_right_waypoints = lane_detector.ShowRightWaypointsNode:main",
             "merge = lane_detector.MergerNode:main",
-            'publish_control = lane_detector.ControlPublisherNode:main'
+            'publish_control = lane_detector.ControlPublisherNode:main',
+            "move_with_same_velocity = lane_detector.VelocityControllerNode:main"
         ],
     },
 )

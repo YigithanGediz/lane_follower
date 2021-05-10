@@ -20,6 +20,7 @@ lane_detector/RightLaneDetectorNode.py
 lane_detector/RightWaypointsNode.py
 lane_detector/ShowLeftWaypointsNode.py
 lane_detector/ShowRightWaypointsNode.py
+lane_detector/VelocityControllerNode.py
 lane_detector/__init__.py
 lane_detector/cluster_loss3.py
 lane_detector/evaluation.py

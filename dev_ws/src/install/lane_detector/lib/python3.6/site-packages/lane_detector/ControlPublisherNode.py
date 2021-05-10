@@ -13,23 +13,16 @@ class ControlPublisherNode(Node):
     def __init__(self):
         super().__init__("ControlPublisher")
 
-        self.publisher = self.create_publisher(
-            VehicleControlData,
-            "/vehicle_cmd",
-            1
-        )
-
-        self.odom_subscriber = self.create_subscription(
-            Odometry,
-            "/odom",
-            self.vehicle_callback,
-            1
-        )
-
         self.left_subscriber = self.create_subscription(
             LaneCoeffs,
             "/lane_detection/left_coeffs",
             self.callback,
+            1
+        )
+
+        self.publisher = self.create_publisher(
+            VehicleControlData,
+            "/vehicle_cmd",
             1
         )
 
@@ -55,20 +48,6 @@ class ControlPublisherNode(Node):
         #control.acceleration_pct = 0.1
 
         self.publisher.publish(control)
-
-    def vehicle_callback(self, msg):
-        speed = msg.twist.twist.linear.x
-        control = VehicleControlData()
-        if speed < 1:
-            control.acceleration_pct = 0.2
-
-        elif speed < 1:
-            control.braking_pct = 0.2
-
-        self.publisher.publish(control)
-
-
-
 
     def transform(self, slope, bias, vertical_slope_thresh=20):
         # Rotate the line 90 degrees
