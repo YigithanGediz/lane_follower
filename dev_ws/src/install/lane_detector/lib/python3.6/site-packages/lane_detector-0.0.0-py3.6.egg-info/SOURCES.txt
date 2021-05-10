@@ -10,7 +10,7 @@ setup.py
 ../build/lane_detector/lane_detector.egg-info/zip-safe
 lane_detector/BinaryToFit.py
 lane_detector/LeftLaneDetectorNode.py
-lane_detector/LeftWaypointExtractNode.py
+lane_detector/LeftWaypointsNode.py
 lane_detector/ProcessLaneNode.py
 lane_detector/RightLaneDetectorNode.py
 lane_detector/ShowLeftWaypoints.py

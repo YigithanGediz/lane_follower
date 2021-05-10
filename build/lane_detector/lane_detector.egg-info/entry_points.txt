@@ -1,4 +1,0 @@
-[console_scripts]
-lane_detection = lane_detector.LaneDetectorNode:main
-process_lanes = lane_detector.ProcessLaneNode:main
-

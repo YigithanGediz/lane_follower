@@ -25,7 +25,7 @@ setup(
             'left_lane_detection = lane_detector.LeftLaneDetectorNode:main',
             'right_lane_detection = lane_detector.RightLaneDetectorNode:main',
             'process_lanes = lane_detector.ProcessLaneNode:main',
-            'left_waypoints_extraction = lane_detector.LeftWaypointExtractNode:main'
+            'left_waypoints = lane_detector.LeftWaypointsNode:main'
         ],
     },
 )

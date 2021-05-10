@@ -11,7 +11,7 @@ import time
 class LaneDetectorNode(Node):
 
     def __init__(self):
-        super().__init__("LeftLaneDetector")
+        super().__init__("RightLaneDetector")
 
         self.subscription_right = self.create_subscription(
             CompressedImage,
