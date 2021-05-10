@@ -11,9 +11,12 @@ setup.py
 lane_detector/BinaryToFit.py
 lane_detector/LeftLaneDetectorNode.py
 lane_detector/LeftWaypointsNode.py
+lane_detector/MergerNode.py
 lane_detector/ProcessLaneNode.py
 lane_detector/RightLaneDetectorNode.py
+lane_detector/RightWaypointsNode.py
 lane_detector/ShowLeftWaypointsNode.py
+lane_detector/ShowRightWaypointsNode.py
 lane_detector/__init__.py
 lane_detector/cluster_loss3.py
 lane_detector/evaluation.py

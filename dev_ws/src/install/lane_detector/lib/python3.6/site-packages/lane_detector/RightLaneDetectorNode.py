@@ -46,7 +46,7 @@ class LaneDetectorNode(Node):
         binary, _ = self.model_object(gt_image.unsqueeze(0).cuda())
         binary_img = torch.argmax(binary, dim=1).squeeze().cpu().numpy()
 
-        binary_img = cv2.resize(binary_img, dsize=(image.shape[1], image.shape[0]), interpolation=cv2.INTER_NEAREST)
+        #binary_img = cv2.resize(binary_img, dsize=(image.shape[1], image.shape[0]), interpolation=cv2.INTER_NEAREST)
 
         binary_compressed = self.bridge.cv2_to_compressed_imgmsg(binary_img.astype("float32"))
 

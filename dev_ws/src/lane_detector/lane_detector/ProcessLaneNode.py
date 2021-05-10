@@ -45,9 +45,9 @@ class ProcessLaneNode(Node):
         self.rightCameraFitter = BinaryToFit(show_results=True, camera_type="right")
         self.bridge = CvBridge()
 
-    def left_listener_callback(self, msg):
+    def left_listener_callback(self, msg, histogram=False):
         image = np.array(self.bridge.compressed_imgmsg_to_cv2(msg))
-        fit_params = self.leftCameraFitter.getFitParams(image)
+        fit_params = self.leftCameraFitter.getFitParams(image) if histogram else self.line_fitter(image)
 
         coeffs = LaneCoeffs()
         coeffs.name = "left"
@@ -56,15 +56,22 @@ class ProcessLaneNode(Node):
         self.left_publisher.publish(coeffs)
 
 
-    def right_listener_callback(self, msg):
+    def right_listener_callback(self, msg, histogram=False):
         image = np.array(self.bridge.compressed_imgmsg_to_cv2(msg))
-        fit_params = self.rightCameraFitter.getFitParams(image)
+        fit_params = self.rightCameraFitter.getFitParams(image) if histogram else self.line_fitter(image)
 
         coeffs = LaneCoeffs()
         coeffs.name = "right"
         coeffs.slope = fit_params[0]
         coeffs.bias = fit_params[1]
         self.right_publisher.publish(coeffs)
+
+    def line_fitter(self, image):
+
+        y,x = np.where(image == 1)
+        coeffs = np.polyfit(x,-1*y,1)
+
+        return coeffs
 
 
 def main(args=None):

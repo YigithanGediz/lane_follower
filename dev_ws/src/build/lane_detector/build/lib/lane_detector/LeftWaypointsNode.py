@@ -38,7 +38,7 @@ class LeftWaypointsNode(Node):
         if t_slope is not np.inf:
             # Ortaya göre yapalım önce.
             start_x = x_max/2
-            start_y = y_max -1
+            start_y = y_max
 
             x_space = np.linspace(start_x - n_samples/2, start_x + n_samples/2, n_samples +1, dtype="float64")
             line_coeffs = np.array([t_slope, start_y - t_slope*start_x])
@@ -66,7 +66,7 @@ class LeftWaypointsNode(Node):
 
             data.is_inf = True
             data.x = [x_max/2]*n_samples
-            data.y = list(np.linspace(y_max, y_max-n_samples-1, n_samples, dtype="float64"))
+            data.y = list(np.linspace(y_max-100, y_max-100-n_samples-1, n_samples, dtype="float64"))
 
             data2.name = "Vertical"
             data2.slope = 999999999999999.

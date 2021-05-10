@@ -35,11 +35,25 @@ def generate_launch_description():
         output="screen"
     )
 
+    right_waypoints_node = Node(
+        package="lane_detector",
+        node_executable="right_waypoints",
+        output="screen"
+    )
+
+    show_right_waypoints_node = Node(
+        package="lane_detector",
+        node_executable="show_right_waypoints",
+        output="screen"
+    )
+
     ld.add_action(process_lane_node)
     ld.add_action(left_lane_detection_node)
     ld.add_action(right_lane_detection_node)
     ld.add_action(left_waypoints_node)
     ld.add_action(show_left_waypoints_node)
+    ld.add_action(right_waypoints_node)
+    ld.add_action(show_right_waypoints_node)
 
     return ld
 
