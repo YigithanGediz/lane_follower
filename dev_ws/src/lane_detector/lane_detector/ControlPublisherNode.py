@@ -6,8 +6,6 @@ from spark_msgs.msg import LaneCoeffs
 import numpy as np
 import math
 
-deneme = Odometry()
-
 
 class ControlPublisherNode(Node):
     def __init__(self):
@@ -26,24 +24,17 @@ class ControlPublisherNode(Node):
             1
         )
 
+        self.constant = 107
 
-    def callback(self, msg, y_intercept = 200, x_interval = (0,256)):
+
+    def callback(self, msg, y_intercept = 256, x_interval = (0,512)):
         coeffs = np.array(list(msg.coeffs))
-        coeffs[2] -= y_intercept
+        poly = np.poly1d(coeffs)
+        root = poly(y_intercept)
 
-        roots = np.roots(coeffs)
 
-        root = [number for number in roots if (np.isreal(number) and number < x_interval[1] and number > x_interval[0])]
-
-        if len(root) == 0:
-            root = -1
-
-        else:
-            root = root[0]
 
         control = VehicleControlData()
-
-
 
         #control.acceleration_pct = 0.1
 
