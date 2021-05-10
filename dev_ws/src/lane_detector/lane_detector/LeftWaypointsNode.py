@@ -30,9 +30,11 @@ class LeftWaypointsNode(Node):
         t_slope, t_bias = self.transform(slope, bias)
         line = np.poly1d([t_slope, t_bias])
 
-        n_samples = 40
 
-        x_space = np.linspace(0, 1080, 1080, dtype="float64")
+        # Implement the line near the middle of the x axis
+        n_samples = 100
+
+        x_space = np.linspace(1080-(n_samples/2),1080+(n_samples/2) ,n_samples + 1, dtype="float64")
         y_space = line(x_space)
 
         data = WaypointData()
@@ -42,9 +44,16 @@ class LeftWaypointsNode(Node):
         self.publisher.publish(data)
 
 
-    def transform(self, slope, bias):
-        return (1/slope),bias
+    def transform(self, slope, bias, vertical_slope_thresh=40):
+        # Rotate the line 90 degrees clockwise
+        rot_slope = (-1/slope)
+        rot_bias = bias
 
+        # If slope's absolute value is greater than threshold, the line is vertical
+        if abs(rot_slope) >= vertical_slope_thresh:
+            rot_slope = np.inf
+
+        return (rot_slope, rot_bias)
 
 
 def main(args=None):
