@@ -34,27 +34,27 @@ class ControlPublisherNode(Node):
         )
         self.control = VehicleControlData()
         self.pidControl = PIDControl(self.sendSteering)
+        self.pidControl.startThread()
 
     def sendSteering(self, angle):
         self.control.target_wheel_angle = angle
         self.publisher.publish(self.control)
 
-    def callback(self, msg, y_intercept=400, x_interval=(0, 256)):
+    def callback(self, msg, y_intercept=500, x_interval=(0, 256)):
         coeffs = np.array(list(msg.coeffs))
         poly = np.poly1d(coeffs)
         root = poly(y_intercept)
-        self.pidControl.updatePID(root)
+        self.pidControl.updateError(root)
 
-    def vehicle_callback(self, msg, limit_speed=1):
+    def vehicle_callback(self, msg, limit_speed=10):
         speed = msg.twist.twist.linear.x
-        control = VehicleControlData()
         if speed < limit_speed:
-            control.acceleration_pct = 0.2
+            self.control.acceleration_pct = 0.5
+            self.control.braking_pct = 0.0
 
-        elif speed < limit_speed:
-            control.braking_pct = 0.2
-
-        self.publisher.publish(control)
+        elif speed > limit_speed:
+            self.control.braking_pct = 0.5
+            self.control.acceleration_pct = 0.0
 
     def transform(self, slope, bias, vertical_slope_thresh=20):
         # Rotate the line 90 degrees

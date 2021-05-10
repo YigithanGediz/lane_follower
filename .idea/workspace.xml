@@ -2,31 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca683a4-40ae-44a3-a3e2-ae8ad8582b67" name="Default Changelist" comment="Added self-driving functionality to simulation">
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera133.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera134.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera135.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera136.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera137.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera138.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera139.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera140.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera141.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera142.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera143.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera145.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera146.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera147.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera148.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera149.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera151.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/predictions/camera152.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/BinaryToFit.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/BinaryToFit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ControlPublisherNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ControlPublisherNode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/PIDControl.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/PIDControl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ProcessLaneNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/dev_ws/src/lane_detector/lane_detector/ProcessLaneNode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620664134954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added self-driving functionality to simulation">
+      <created>1620665751069</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620665751069</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

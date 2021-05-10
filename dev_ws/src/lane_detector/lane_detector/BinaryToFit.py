@@ -153,7 +153,7 @@ class BinaryToFit:
 
             plotx = np.int32(plotx)
             cv2.polylines(draw_img, [np.asarray([plotx, ploty]).T], False, (0, 0, 255), thickness=3)
-            cv2.circle(draw_img, (107, 200), radius=5, color=(255, 255, 0))
+            cv2.circle(draw_img, (110, 500), radius=5, color=(255, 255, 0))
             cv2.imshow(self.camera_type, draw_img)
             cv2.waitKey(500)
 
