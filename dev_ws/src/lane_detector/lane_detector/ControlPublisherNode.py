@@ -40,13 +40,13 @@ class ControlPublisherNode(Node):
         self.control.target_wheel_angle = angle
         self.publisher.publish(self.control)
 
-    def callback(self, msg, y_intercept=500, x_interval=(0, 256)):
+    def callback(self, msg, y_intercept=50, x_interval=(0, 256)):
         coeffs = np.array(list(msg.coeffs))
         poly = np.poly1d(coeffs)
         root = poly(y_intercept)
         self.pidControl.updateError(root)
 
-    def vehicle_callback(self, msg, limit_speed=2):
+    def vehicle_callback(self, msg, limit_speed=6):
         speed = msg.twist.twist.linear.x
         if speed < limit_speed:
             self.control.acceleration_pct = 0.1

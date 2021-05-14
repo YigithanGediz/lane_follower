@@ -13,7 +13,7 @@ class PIDControl:
 
         self.prev_cte = 0
         self.int_cte = 0
-        self.tau_p, self.tau_d, self.tau_i = 0.0001, 0.0002, 0.000000
+        self.tau_p, self.tau_d, self.tau_i = 0.0002, 0.001, 0.000000
 
 
     def _getError(self):
